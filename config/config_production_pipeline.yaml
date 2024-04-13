@@ -1,7 +1,7 @@
 ---
 
 
-resources: "poirot_config/config/resources_production.yaml"
+resources: "poirot_config/config/resources_production_pipeline.yaml"
 samples: "samples_with_info.tsv"
 units: "units.tsv"
 
