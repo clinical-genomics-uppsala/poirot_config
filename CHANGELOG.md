@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.1.3](https://www.github.com/clinical-genomics-uppsala/poirot_config/compare/v0.1.2...v0.1.3) (2024-04-13)
+
+
+### Bug Fixes
+
+* specify the aligner and snp caller ([3db372f](https://www.github.com/clinical-genomics-uppsala/poirot_config/commit/3db372fd030e8655b82ecd160ac24679c580f7a8))
+
 ### [0.1.2](https://www.github.com/clinical-genomics-uppsala/poirot_config/compare/v0.1.1...v0.1.2) (2024-04-13)
 
 
