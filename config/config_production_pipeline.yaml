@@ -1,5 +1,7 @@
 ---
 
+aligner: "bwa_gpu"
+snp_caller: "deepvariant_gpu"
 
 resources: "poirot_config/config/resources_production_pipeline.yaml"
 samples: "samples_with_info.tsv"
