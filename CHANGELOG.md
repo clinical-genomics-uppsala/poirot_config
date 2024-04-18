@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.0](https://www.github.com/clinical-genomics-uppsala/poirot_config/compare/v0.1.3...v0.2.0) (2024-04-18)
+
+
+### Features
+
+* update hydra modules ([26eb7aa](https://www.github.com/clinical-genomics-uppsala/poirot_config/commit/26eb7aaf2076e51d5cf7fcc9e8a240c5f3cdb09a))
+
 ### [0.1.3](https://www.github.com/clinical-genomics-uppsala/poirot_config/compare/v0.1.2...v0.1.3) (2024-04-13)
 
 
