@@ -7,11 +7,13 @@ Cerebrala_smakarlssjukdomar
 ChiCaP
 Dystoni
 EBS
+Ektodermal_dysplasi
 Endokrin
+Epidermolysis_bullosa
 Epilepsi
+HSP
 Hematologi
 Horsel
-HSP
 Iktyos
 Kardio
 Kraniosynostos
@@ -19,8 +21,10 @@ Neuromuskular
 Neuropati
 Njursjukdomar
 Okular_albinism
-Optikus_atrofi 
+Optikus_atrofi
 PCD
+PPK_och_erytrodermi
+Pachyonychia_congenita
 Periodisk_feber
 Periodisk_paralys
 Rasopatier
@@ -28,3 +32,4 @@ Retinal_degeneration
 Skelettsjukdomar
 Sotos
 Trombocytopenier
+genepanels_WGS
