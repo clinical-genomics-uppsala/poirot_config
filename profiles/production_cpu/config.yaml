@@ -3,10 +3,9 @@ keep-going: True
 restart-times: 2
 rerun-incomplete: True
 use-singularity: True
-snakefile: "workflow/Snakefile"
-configfile: "poirot_config/config/config_production_pipeline.yaml"
-drmaa: "-p {resources.partition} -t {resources.time} -n {resources.threads} --mem={resources.mem_mb} --mem-per-cpu={resources.mem_per_cpu} {resources.gres} -J {rule} -A wp4 -e slurm/{rule}_%j.err -o slurm/{rule}_%j.out --nodes=1-1"
+configfile: "config/config_production_pipeline.yaml"
+drmaa: "-p {resources.partition} -t {resources.time} -n {resources.threads} --mem={resources.mem_mb} --mem-per-cpu={resources.mem_per_cpu} {resources.gres} -J {rule} -A wp3 -e slurm/{rule}_%j.err -o slurm/{rule}_%j.out --nodes=1-1"
 default-resources: [gres=""]
 drmaa-log-dir: "slurm"
-singularity-args: "--cleanenv --bind /beegfs-archive,/beegfs-scratch,/beegfs-storage,/projects,/scratch,/data -B /beegfs-scratch/wp4/poirot_rd_wgs_tmp:/tmp --disable-cache --nv"
+singularity-args: "--cleanenv --bind /beegfs-archive,/beegfs-scratch,/beegfs-storage,/projects,/scratch,/data -B /beegfs-scratch/wp4/poirot_rd_wgs_tmp:/tmp --disable-cache "
 singularity-prefix: "/projects/wp4/nobackup/singularity_cache/"
