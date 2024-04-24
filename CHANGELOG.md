@@ -1,5 +1,21 @@
 # Changelog
 
+## [0.3.0](https://www.github.com/clinical-genomics-uppsala/poirot_config/compare/v0.2.0...v0.3.0) (2024-04-24)
+
+
+### Features
+
+* add and update skin panels ([0e1fb75](https://www.github.com/clinical-genomics-uppsala/poirot_config/commit/0e1fb75353c19db51d102a1943c6ebfe59a9cd44))
+* add gene panel files for poirot ([29fbec6](https://www.github.com/clinical-genomics-uppsala/poirot_config/commit/29fbec65d6bc88489d4271598680f3abbf7f9cc8))
+* add str variant catalog ([20350f4](https://www.github.com/clinical-genomics-uppsala/poirot_config/commit/20350f4e43747cbba35924ec126710df2240d93f))
+* update the norm max and pathogenic min ([649281a](https://www.github.com/clinical-genomics-uppsala/poirot_config/commit/649281aadb532708059cae4a69f84443d4c7d820))
+
+
+### Bug Fixes
+
+* remove duplicate gene ids ([a8c4367](https://www.github.com/clinical-genomics-uppsala/poirot_config/commit/a8c43671bdc5df580d59ca4269ed755ecf58a421))
+* remove Snakefile path from profile config ([e32144f](https://www.github.com/clinical-genomics-uppsala/poirot_config/commit/e32144f48fd7d33ef239dcc789b68cba97d81bbe))
+
 ## [0.2.0](https://www.github.com/clinical-genomics-uppsala/poirot_config/compare/v0.1.3...v0.2.0) (2024-04-18)
 
 
