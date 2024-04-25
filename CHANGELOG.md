@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.0](https://www.github.com/clinical-genomics-uppsala/poirot_config/compare/v0.3.0...v0.4.0) (2024-04-25)
+
+
+### Features
+
+* add new skeletal gene panels ([526c777](https://www.github.com/clinical-genomics-uppsala/poirot_config/commit/526c777da5ec87447da7b3e91660b83f0e1f798c))
+
 ## [0.3.0](https://www.github.com/clinical-genomics-uppsala/poirot_config/compare/v0.2.0...v0.3.0) (2024-04-24)
 
 
