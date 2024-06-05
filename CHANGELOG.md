@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.5.0](https://www.github.com/clinical-genomics-uppsala/poirot_config/compare/v0.4.0...v0.5.0) (2024-06-05)
+
+
+### Features
+
+* add ataxia expansion panel ([1f1ffe2](https://www.github.com/clinical-genomics-uppsala/poirot_config/commit/1f1ffe2d3e20c1ab0590c516ac95af200a72dcfd))
+* add new gene panels ([e663797](https://www.github.com/clinical-genomics-uppsala/poirot_config/commit/e6637974d325bb0b17903804f00529d841409158))
+* update Ektodermal_dysplasi panel ([1b8f260](https://www.github.com/clinical-genomics-uppsala/poirot_config/commit/1b8f2608619fcccf8b4c0eedd3b6be6d92f4559c))
+* update Epilepsi panel ([39b1d78](https://www.github.com/clinical-genomics-uppsala/poirot_config/commit/39b1d7819b6b389200baa3a1502889763cc15e8a))
+* update Rasopatier panel ([b83bbe6](https://www.github.com/clinical-genomics-uppsala/poirot_config/commit/b83bbe61951708295a0e062fbbd8920188d5f247))
+
 ## [0.4.0](https://www.github.com/clinical-genomics-uppsala/poirot_config/compare/v0.3.0...v0.4.0) (2024-04-25)
 
 
