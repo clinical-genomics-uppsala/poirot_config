@@ -25,7 +25,7 @@ modules:
   snv_indels: "v1.0.0"
 
 reference:
-  coverage_bed: "/beegfs-storage/data/ref_data/refseq/refseq_select_mane_with_MT_20240102.bed"   #Created bed with https://github.com/zezzipa/UCSCtable2bed
+  coverage_bed: "/beegfs-storage/data/ref_data/refseq/refseq_select_mane_with_MT_with_non_coding_20240613.bed" # see /beegfs-storage/data/ref_data/refseq/README 
   design_bed: "/beegfs-storage/data/ref_genomes/GRCh38/GRCmasked/homo_sapiens.hg38.wgs.bed"
   exome_bed: "/beegfs-storage/data/ref_genomes/GRCh38/GRCmasked/Twist_Comprehensive_Exome_Covered_Targets_hg38.bed"
   exome_intervals: "/beegfs-storage/data/ref_genomes/GRCh38/GRCmasked/Twist_Comprehensive_Exome_Covered_Targets_hg38.interval_list"
@@ -34,6 +34,9 @@ reference:
   genepanels: "config/gene_panels/genepanels_WGS.list"
   sites: "/beegfs-storage/data/ref_genomes/GRCh38/GRCmasked/Homo_sapiens_assembly38.known_indels.vcf.gz"
   wgs_intervals: "/beegfs-storage/data/ref_genomes/GRCh38/GRCmasked/homo_sapiens.hg38.wgs.interval_list"
+  str_panels_dir: "config/str_panels"
+  str_panels:
+    - "ataxi.list"
   merge_contigs: # contigs to be merged to a single BAM for mark duplicates
     - ".*_random"
     - "chrUn_.*"
@@ -216,7 +219,7 @@ mosdepth_bed:
   extra: ""
 
 multiqc:
-  container: "docker://hydragenetics/multiqc:1.11"
+  container: "docker://hydragenetics/multiqc:1.21"
   reports:
     DNA:
       config: "config/multiqc_config_DNA.yaml"
