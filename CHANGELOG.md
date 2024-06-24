@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.6.0](https://www.github.com/clinical-genomics-uppsala/poirot_config/compare/v0.5.0...v0.6.0) (2024-06-24)
+
+
+### Features
+
+* add RNU4ATAC to retinal degeneration panel ([24762fc](https://www.github.com/clinical-genomics-uppsala/poirot_config/commit/24762fcee106d6b52f1f5a71cc5c50b19030077c))
+* add SNORD118 to epilepsi panel ([69ccb7e](https://www.github.com/clinical-genomics-uppsala/poirot_config/commit/69ccb7e6ce1e752de88575306ae0f442bce007fd))
+* update coverage bed file to include non-coding genes ([dc8910f](https://www.github.com/clinical-genomics-uppsala/poirot_config/commit/dc8910fba1f716276606ee2b2d9d57d15e1f6722))
+* update multiqc and add ataxi panel list ([14e8b3b](https://www.github.com/clinical-genomics-uppsala/poirot_config/commit/14e8b3b53a8631370f966b3b0b8c52420520c90b))
+* update the ChiCap gene panel ([0c59023](https://www.github.com/clinical-genomics-uppsala/poirot_config/commit/0c59023e93951ed72a3f8d93d5d8d97dfc628bef))
+
 ## [0.5.0](https://www.github.com/clinical-genomics-uppsala/poirot_config/compare/v0.4.0...v0.5.0) (2024-06-05)
 
 
