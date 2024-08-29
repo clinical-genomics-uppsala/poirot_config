@@ -13,7 +13,7 @@ default_container: "docker://hydragenetics/common:1.11.1"
 
 modules:
   alignment: "v0.6.0"
-  annotation: "v0.3.0"
+  annotation: "v1.0.1"
   compression: "v2.0.0"
   cnv_sv: "v0.5.0"
   filtering: "v0.3.0"
@@ -56,15 +56,18 @@ bcftools_split_vep:
 bcftools_view_biallelic:
   extra: "-m2 -M2 -v snps"
 
-bcftools_filter_cnvpytor:
-  exclude: "'pytorP1>0.0001 | pytorDG<100000 | pytorPN>0.5 | pytorQ0>0.5'"
+bcftools_softfilter_cnvpytor:
+  exclude: "'pytorP1>0.0001 | pytorDG<100000 | pytorPN>0.5 | ( pytorQ0>0.5 && FORMAT/CN != 0)'"
   extra: "-s LowQual "
+
+bcftools_hardfilter_cnvpytor:
+  exclude: "'pytorP1>0.0001 | pytorDG<100000 | pytorPN>0.5 | ( pytorQ0>0.5 && FORMAT/CN != 0)'"
 
 bcftools_view_pass:
   extra: "--apply-filter PASS "
 
 bcftools_view_svdb:
-  extra: "-f 'PASS' -e 'tiddit_AF>0.05 | manta_AF>0.05 | cnvpytor_AF>0.05 | gnomad_AF>0.1'"
+  extra: "-f 'PASS' -e 'manta_AF>0.05 | cnvpytor_AF>0.05 | gnomad_AF>0.1'"
 
 bwa_mem:
   container: "docker://hydragenetics/bwa:0.7.15"
@@ -317,20 +320,20 @@ stranger:
 svdb_merge:
   container: "docker://hydragenetics/svdb:2.8.2"
   overlap: 0.6
-  priority: "tiddit,manta,cnvpytor"
-  extra: "--pass_only "
+  priority: "manta,cnvpytor"
+  extra: "--pass_only --no_intra "
 
 svdb_query:
   container: "docker://hydragenetics/svdb:2.8.2"
   db_string:
-    "--db /beegfs-storage/data/ref_data/wp3/svdb/svdb_create/tiddit_wgs_hg38_1.0.vcf.gz,/beegfs-storage/data/ref_data/wp3/svdb/svdb_create/manta_wgs_hg38_1.0.vcf.gz,/beegfs-storage/data/ref_data/wp3/svdb/svdb_create/cnvpytor_wgs_hg38_1.0.vcf.gz"
-  extra: "--in_frq FRQ,FRQ,FRQ --in_occ OCC,OCC,OCC --out_frq tiddit_AF,manta_AF,cnvpytor_AF --out_occ tiddit_OCC,manta_OCC,cnpytor_OCC "
+    "--db /beegfs-storage/data/ref_data/wp3/svdb/svdb_create/manta_wgs_hg38_1.0.vcf.gz,/beegfs-storage/data/ref_data/wp3/svdb/svdb_create/cnvpytor_wgs_hg38_1.0.vcf.gz"
+  extra: "--in_frq FRQ,FRQ --in_occ OCC,OCC --out_frq manta_AF,cnvpytor_AF --out_occ manta_OCC,cnvpytor_OCC "
 
 tabix:
   container: "docker://hydragenetics/common:1.11.1"
 
 tiddit:
-  container: "docker://hydragenetics/tiddit:3.3.2"
+  container: "docker://hydragenetics/tiddit:3.7.0"
 
 upd:
   container: "docker://hydragenetics/upd:0.1.1"
