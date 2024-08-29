@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.7.0](https://www.github.com/clinical-genomics-uppsala/poirot_config/compare/v0.6.0...v0.7.0) (2024-08-29)
+
+
+### Features
+
+* add RFC1 to ataxia panel ([9527bcd](https://www.github.com/clinical-genomics-uppsala/poirot_config/commit/9527bcdef87258afd3803502eb42036699369c30))
+* update cnvpytor filters and update tiddit ([08c1ee9](https://www.github.com/clinical-genomics-uppsala/poirot_config/commit/08c1ee92ae2201b41f47e321e49df7562e23a566))
+* update tiddit runtime ([c70580e](https://www.github.com/clinical-genomics-uppsala/poirot_config/commit/c70580e00269cf8c5c61d673a904570d384ed29b))
+
 ## [0.6.0](https://www.github.com/clinical-genomics-uppsala/poirot_config/compare/v0.5.0...v0.6.0) (2024-06-24)
 
 
