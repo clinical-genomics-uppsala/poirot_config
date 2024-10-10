@@ -25,7 +25,7 @@ modules:
   snv_indels: "v1.0.0"
 
 reference:
-  coverage_bed: "/beegfs-storage/data/ref_data/refseq/refseq_select_mane_with_MT_with_non_coding_20240613.bed" # see /beegfs-storage/data/ref_data/refseq/README 
+  coverage_bed: "/beegfs-storage/data/ref_data/refseq/refseq_select_mane_with_MT_with_non_coding_20241010.bed" # see /beegfs-storage/data/ref_data/refseq/README 
   design_bed: "/beegfs-storage/data/ref_genomes/GRCh38/GRCmasked/homo_sapiens.hg38.wgs.bed"
   exome_bed: "/beegfs-storage/data/ref_genomes/GRCh38/GRCmasked/Twist_Comprehensive_Exome_Covered_Targets_hg38.bed"
   exome_intervals: "/beegfs-storage/data/ref_genomes/GRCh38/GRCmasked/Twist_Comprehensive_Exome_Covered_Targets_hg38.interval_list"
