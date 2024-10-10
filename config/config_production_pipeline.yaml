@@ -37,6 +37,8 @@ reference:
   str_panels_dir: "config/str_panels"
   str_panels:
     - "ataxi.list"
+    - "dystoni.list"
+    - "spastisk_paraplegi.list"
   merge_contigs: # contigs to be merged to a single BAM for mark duplicates
     - ".*_random"
     - "chrUn_.*"
