@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.8.0](https://www.github.com/clinical-genomics-uppsala/poirot_config/compare/v0.7.0...v0.8.0) (2024-10-14)
+
+
+### Features
+
+* add Immun, Njurcancer and Wilms gene panels ([18f36f1](https://www.github.com/clinical-genomics-uppsala/poirot_config/commit/18f36f1ac0e806f4ea560e1926a317d6d441cdb3))
+* add new str panels ([89400e8](https://www.github.com/clinical-genomics-uppsala/poirot_config/commit/89400e804d1d54c32db956e9ceb065f23965cf77))
+* add RFC1 to ataxia gene panel ([b6a9873](https://www.github.com/clinical-genomics-uppsala/poirot_config/commit/b6a9873270b0b6b95f524ed26121430ed2c4f066))
+* update Ataxi, Dystoni and HSP gene panels ([0eb988d](https://www.github.com/clinical-genomics-uppsala/poirot_config/commit/0eb988ddf2bf4046fcb636969dd9a76f571a64fc))
+* update config with new str panels ([c2693da](https://www.github.com/clinical-genomics-uppsala/poirot_config/commit/c2693da2b5bbac1af70c3985ace3c2bf553faf4a))
+* update coverage bed with new genes from added panels ([30b2b9e](https://www.github.com/clinical-genomics-uppsala/poirot_config/commit/30b2b9e70e9e72ff4620587f598f753197df5175))
+
 ## [0.7.0](https://www.github.com/clinical-genomics-uppsala/poirot_config/compare/v0.6.0...v0.7.0) (2024-08-29)
 
 
