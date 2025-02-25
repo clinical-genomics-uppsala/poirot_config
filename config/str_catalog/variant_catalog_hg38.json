@@ -1220,7 +1220,6 @@
       "NormalMax": 11,
       "PathologicMin": 12
     },
-
     {
       "VariantType": ["Repeat","Repeat"],
       "LocusId": "POLG",
@@ -1238,5 +1237,19 @@
       "NormalMax": 15,
       "PathologicMin": 10000,
       "PathologicRegion": "chr15:89333599-89333628"
+    },
+    {
+      "LocusId": "ZFHX3",
+      "HGNCId": 777,
+      "DisplayRU": "CGG",
+      "InheritanceMode": "AD",
+      "Disease": "SCA4",
+      "SourceDisplay": "PubMed",
+      "SourceId": "38035881",
+      "LocusStructure": "(GCC)*",
+      "ReferenceRegion": "chr16:72787694-72787757",
+      "VariantType": "Repeat",
+      "NormalMax": 26,
+      "PathologicMin": 42
     }
 ]
