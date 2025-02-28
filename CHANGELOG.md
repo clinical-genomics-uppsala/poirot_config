@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.9.0](https://www.github.com/clinical-genomics-uppsala/poirot_config/compare/v0.8.0...v0.9.0) (2025-02-28)
+
+
+### Features
+
+* add FMR1 to ataxi str panel ([1f5b430](https://www.github.com/clinical-genomics-uppsala/poirot_config/commit/1f5b4304d09e015d47080aa2888c00d6bf4180e6))
+* update ataxia list and repeat expansion catalog ([0f37fa9](https://www.github.com/clinical-genomics-uppsala/poirot_config/commit/0f37fa9af01c57c68a348c154d960710af7de842))
+
+
+### Bug Fixes
+
+* remove archive --bind ([b746d5f](https://www.github.com/clinical-genomics-uppsala/poirot_config/commit/b746d5fc45431d2aaad8a0ba901d6fd5eea0a8ed))
+
 ## [0.8.0](https://www.github.com/clinical-genomics-uppsala/poirot_config/compare/v0.7.0...v0.8.0) (2024-10-14)
 
 
