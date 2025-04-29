@@ -17,17 +17,17 @@
       url: file:/beegfs-storage/data/ref_data/gatk_mito/blacklist_sites.hg38.chrM.bed
     ShiftBack.chain:
       checksum: a65673402f6dce44c7acc449efa017d6
-      path: poirot/gatk_mito/gatk_mito/ShiftBack.chain
+      path: poirot/gatk_mito/ShiftBack.chain
       type: file
       url: file:/beegfs-storage/data/ref_data/gatk_mito/ShiftBack.chain
     non_control_region.chrM.interval_list:
       checksum: d2e36c54427e83e140cad5a2d0bbf045
-      path: poirot/gatk_mito/gatk_mito/non_control_region.chrM.interval_list
+      path: poirot/gatk_mito/non_control_region.chrM.interval_list
       type: file
       url: file:/beegfs-storage/data/ref_data/gatk_mito/non_control_region.chrM.interval_list
     control_region_shifted.chrM.interval_list:
       checksum: 53ae9360e3657cd9a82987771cfe8ee4
-      path: poirot/gatk_mito/gatk_mito/control_region_shifted.chrM.interval_list
+      path: poirot/gatk_mito/control_region_shifted.chrM.interval_list
       type: file
       url: file:/beegfs-storage/data/ref_data/gatk_mito/control_region_shifted.chrM.interval_list
       
