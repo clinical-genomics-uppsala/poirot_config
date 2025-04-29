@@ -56,7 +56,7 @@
     checksum: 16cac79cd6846346396d54ad3c14ef0f
     path: poirot/gnomad.v4.0.sv.vcf.gz
     type: file
-    url: file: /data/ref_data/gnomad/gnomad_sv/gnomad.v4.0.sv.vcf.gz
+    url: file:/data/ref_data/gnomad/gnomad_sv/gnomad.v4.0.sv.vcf.gz
   
   peddy_sites:
     checksum: 736f74618ab09407ffa102bbb6475015
