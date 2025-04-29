@@ -97,7 +97,7 @@
       checksum: 3fce90c2d2c1ea3eafcdcd5f17ec8724
       path: poirot/GCA_000001405.15_GRCh38_no_alt_analysis_set_GRCmasked.fasta.bwt
       type: file
-      url: file: /beegfs-storage/data/ref_genomes/GRCh38/GRCmasked/GCA_000001405.15_GRCh38_no_alt_analysis_set_GRCmasked.fasta.bwt
+      url: file:/beegfs-storage/data/ref_genomes/GRCh38/GRCmasked/GCA_000001405.15_GRCh38_no_alt_analysis_set_GRCmasked.fasta.bwt
     pac:
       checksum: 586a1236048aa02f47296f799eacc175
       path: poirot/GCA_000001405.15_GRCh38_no_alt_analysis_set_GRCmasked.fasta.pac
