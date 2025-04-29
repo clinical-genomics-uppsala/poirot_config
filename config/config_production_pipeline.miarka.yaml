@@ -1,9 +1,14 @@
 ---
+PIPELINE_VERSION: v0.8.0
+REFERENCE_DATA: /proj/ngi2024001/nobackup/bin/wp3_hg/design_and_ref_files
+APPTAINER_CACHE: /proj/ngi2024001/nobackup/bin/wp3_hg/{{PIPELINE_VERSION}}/apptainer_cache
+
+hydra_local_path: /proj/ngi2024001/nobackup/bin/wp3_hg/{{PIPELINE_VERSION}}/hydra-genetics
 
 aligner: "bwa_gpu"
 snp_caller: "deepvariant_gpu"
 
-resources: "config/resources_production_pipeline.yaml"
+resources: "config/resources_production_pipeline.miarka.yaml"
 samples: "samples_with_info.tsv"
 units: "units.tsv"
 
@@ -25,15 +30,15 @@ modules:
   snv_indels: "v1.0.0"
 
 reference:
-  coverage_bed: "/beegfs-storage/data/ref_data/refseq/refseq_select_mane_with_MT_with_non_coding_20241010.bed" # see /beegfs-storage/data/ref_data/refseq/README 
-  design_bed: "/beegfs-storage/data/ref_genomes/GRCh38/GRCmasked/homo_sapiens.hg38.wgs.bed"
-  exome_bed: "/data/ref_data/wp3/hastings/hg38_exome_comp_spikein_v2.0.2_targets_sorted.re_annotated.sorted.bed"
-  exome_intervals: "/data/ref_data/wp3/hastings/hg38_exome_comp_spikein_v2.0.2_targets_sorted.re_annotated.sorted.interval_list"
-  fasta: "/beegfs-storage/data/ref_genomes/GRCh38/GRCmasked/GCA_000001405.15_GRCh38_no_alt_analysis_set_GRCmasked.fasta"
-  fai: "/beegfs-storage/data/ref_genomes/GRCh38/GRCmasked/GCA_000001405.15_GRCh38_no_alt_analysis_set_GRCmasked.fasta.fai"
+  coverage_bed: "{{REFERENCE_DATA}}/poirot/refseq_select_mane_with_MT_with_non_coding_20241010.bed" # see /beegfs-storage/data/ref_data/refseq/README 
+  design_bed: "{{REFERENCE_DATA}}/poirot/homo_sapiens.hg38.wgs.bed"
+  exome_bed: "{{REFERENCE_DATA}}/poirot/hg38_exome_comp_spikein_v2.0.2_targets_sorted.re_annotated.sorted.bed"
+  exome_intervals: "{{REFERENCE_DATA}}/poirot/hg38_exome_comp_spikein_v2.0.2_targets_sorted.re_annotated.sorted.interval_list"
+  fasta: "{{REFERENCE_DATA}}/poirot/GCA_000001405.15_GRCh38_no_alt_analysis_set_GRCmasked.fasta"
+  fai: "{{REFERENCE_DATA}}/poirot/GCA_000001405.15_GRCh38_no_alt_analysis_set_GRCmasked.fasta.fai"
   genepanels: "config/gene_panels/genepanels_WGS.list"
-  sites: "/beegfs-storage/data/ref_genomes/GRCh38/GRCmasked/Homo_sapiens_assembly38.known_indels.vcf.gz"
-  wgs_intervals: "/beegfs-storage/data/ref_genomes/GRCh38/GRCmasked/homo_sapiens.hg38.wgs.interval_list"
+  sites: "{{REFERENCE_DATA}}/poirot/Homo_sapiens_assembly38.known_indels.vcf.gz"
+  wgs_intervals: "{{REFERENCE_DATA}}/poirot/homo_sapiens.hg38.wgs.interval_list"
   str_panels_dir: "config/str_panels"
   str_panels:
     - "ataxi.list"
@@ -73,30 +78,30 @@ bcftools_view_svdb:
 
 bwa_mem:
   container: "docker://hydragenetics/bwa:0.7.15"
-  amb: "/beegfs-storage/data/ref_genomes/GRCh38/GRCmasked/GCA_000001405.15_GRCh38_no_alt_analysis_set_GRCmasked.fasta.amb"
-  ann: "/beegfs-storage/data/ref_genomes/GRCh38/GRCmasked/GCA_000001405.15_GRCh38_no_alt_analysis_set_GRCmasked.fasta.ann"
-  bwt: "/beegfs-storage/data/ref_genomes/GRCh38/GRCmasked/GCA_000001405.15_GRCh38_no_alt_analysis_set_GRCmasked.fasta.bwt"
-  pac: "/beegfs-storage/data/ref_genomes/GRCh38/GRCmasked/GCA_000001405.15_GRCh38_no_alt_analysis_set_GRCmasked.fasta.pac"
-  sa: "/beegfs-storage/data/ref_genomes/GRCh38/GRCmasked/GCA_000001405.15_GRCh38_no_alt_analysis_set_GRCmasked.fasta.sa"
+  amb: "{{REFERENCE_DATA}}/poirot/GCA_000001405.15_GRCh38_no_alt_analysis_set_GRCmasked.fasta.amb"
+  ann: "{{REFERENCE_DATA}}/poirot/GCA_000001405.15_GRCh38_no_alt_analysis_set_GRCmasked.fasta.ann"
+  bwt: "{{REFERENCE_DATA}}/poirot/GCA_000001405.15_GRCh38_no_alt_analysis_set_GRCmasked.fasta.bwt"
+  pac: "{{REFERENCE_DATA}}/poirot/GCA_000001405.15_GRCh38_no_alt_analysis_set_GRCmasked.fasta.pac"
+  sa: "{{REFERENCE_DATA}}/poirot/GCA_000001405.15_GRCh38_no_alt_analysis_set_GRCmasked.fasta.sa"
 
 bwa_mem_mito:
   container: "docker://hydragenetics/bwa_mem:0.7.17"
   extra: "-K 100000000 -v3 -Y "
   amb:
-    mt: "/beegfs-storage/data/ref_data/gatk_mito/Homo_sapiens_assembly38.chrM.fasta.amb"
-    mt_shifted: "/beegfs-storage/data/ref_data/gatk_mito/Homo_sapiens_assembly38.chrM.shifted_by_8000_bases.fasta.amb"
+    mt: "{{REFERENCE_DATA}}/poirot/gatk_mito/Homo_sapiens_assembly38.chrM.fasta.amb"
+    mt_shifted: "{{REFERENCE_DATA}}/poirot/gatk_mito/Homo_sapiens_assembly38.chrM.shifted_by_8000_bases.fasta.amb"
   ann:
-    mt: "/beegfs-storage/data/ref_data/gatk_mito/Homo_sapiens_assembly38.chrM.fasta.ann"
-    mt_shifted: "/beegfs-storage/data/ref_data/gatk_mito/Homo_sapiens_assembly38.chrM.shifted_by_8000_bases.fasta.ann"
+    mt: "{{REFERENCE_DATA}}/poirot/gatk_mito/Homo_sapiens_assembly38.chrM.fasta.ann"
+    mt_shifted: "{{REFERENCE_DATA}}/poirot/gatk_mito/Homo_sapiens_assembly38.chrM.shifted_by_8000_bases.fasta.ann"
   bwt:
-    mt: "/beegfs-storage/data/ref_data/gatk_mito/Homo_sapiens_assembly38.chrM.fasta.bwt"
-    mt_shifted: "/beegfs-storage/data/ref_data/gatk_mito/Homo_sapiens_assembly38.chrM.shifted_by_8000_bases.fasta.bwt"
+    mt: "{{REFERENCE_DATA}}/poirot/gatk_mito/Homo_sapiens_assembly38.chrM.fasta.bwt"
+    mt_shifted: "{{REFERENCE_DATA}}/poirot/gatk_mito/Homo_sapiens_assembly38.chrM.shifted_by_8000_bases.fasta.bwt"
   pac:
-    mt: "/beegfs-storage/data/ref_data/gatk_mito/Homo_sapiens_assembly38.chrM.fasta.pac"
-    mt_shifted: "/beegfs-storage/data/ref_data/gatk_mito/Homo_sapiens_assembly38.chrM.shifted_by_8000_bases.fasta.pac"
+    mt: "{{REFERENCE_DATA}}/poirot/gatk_mito/Homo_sapiens_assembly38.chrM.fasta.pac"
+    mt_shifted: "{{REFERENCE_DATA}}/poirot/gatk_mito/Homo_sapiens_assembly38.chrM.shifted_by_8000_bases.fasta.pac"
   sa:
-    mt: "/beegfs-storage/data/ref_data/gatk_mito/Homo_sapiens_assembly38.chrM.fasta.sa"
-    mt_shifted: "/beegfs-storage/data/ref_data/gatk_mito/Homo_sapiens_assembly38.chrM.shifted_by_8000_bases.fasta.sa"
+    mt: "{{REFERENCE_DATA}}/poirot/gatk_mito/Homo_sapiens_assembly38.chrM.fasta.sa"
+    mt_shifted: "{{REFERENCE_DATA}}/poirot/gatk_mito/Homo_sapiens_assembly38.chrM.shifted_by_8000_bases.fasta.sa"
 
 cnvpytor_readdepth:
   container: "docker://hydragenetics/cnvpytor:1.3.1"
@@ -152,7 +157,7 @@ gatk_left_align_and_trim_variants:
 
 gatk_lift_over_vcf:
   container: "docker://hydragenetics/gatk4:4.2.2.0"
-  shift_back_chain: "/beegfs-storage/data/ref_data/gatk_mito/ShiftBack.chain"
+  shift_back_chain: "{{REFERENCE_DATA}}/poirot/gatk_mito/ShiftBack.chain"
 
 gatk_mark_duplicates:
   container: "docker://hydragenetics/gatk4:4.2.2.0"
@@ -169,8 +174,8 @@ gatk_merge_stats:
 gatk_mutect2:
   container: "docker://hydragenetics/gatk4:4.2.2.0"
   interval:
-    mt: "/beegfs-storage/data/ref_data/gatk_mito/non_control_region.chrM.interval_list"
-    mt_shifted: "/beegfs-storage/data/ref_data/gatk_mito/control_region_shifted.chrM.interval_list"
+    mt: "{{REFERENCE_DATA}}/poirot/gatk_mito/non_control_region.chrM.interval_list"
+    mt_shifted: "{{REFERENCE_DATA}}/poirot/gatk_mito/control_region_shifted.chrM.interval_list"
   max_reads_per_alignment_start: 75
 
 gatk_print_reads:
@@ -202,14 +207,14 @@ glnexus_trio:
 glnexus_peddy:
   container: "docker://ghcr.io/dnanexus-rnd/glnexus:v1.4.1"
   configfile: "DeepVariantWGS"
-  extra: "--bed /beegfs-storage/data/ref_data/peddy/v0.4.8/GRCH38.bed "
+  extra: "--bed {{REFERENCE_DATA}}/poirot/peddy/v0.4.8/GRCH38.bed "
 
 haplocheck:
   container: "docker://hydragenetics/haplocheck:1.3.3"
 
 manta_config_n:
   container: "docker://hydragenetics/manta:1.6.0"
-  extra: "--callRegions /beegfs-storage/data/ref_genomes/GRCh38/GRCmasked/GRCh38_chromosomes.bed.gz"
+  extra: "--callRegions {{REFERENCE_DATA}}/poirot/GRCh38_chromosomes.bed.gz"
 
 manta_run_workflow_n:
   container: "docker://hydragenetics/manta:1.6.0"
@@ -253,9 +258,9 @@ multiqc:
         - "qc/verifybamid2/{sample}_{type}.selfSM"
 
 mt_reference:
-  mt: "/beegfs-storage/data/ref_data/gatk_mito/Homo_sapiens_assembly38.chrM.fasta"
-  mt_shifted: "/beegfs-storage/data/ref_data/gatk_mito/Homo_sapiens_assembly38.chrM.shifted_by_8000_bases.fasta"
-  blacklist: /beegfs-storage/data/ref_data/gatk_mito/blacklist_sites.hg38.chrM.bed
+  mt: "{{REFERENCE_DATA}}/poirot/gatk_mito/Homo_sapiens_assembly38.chrM.fasta"
+  mt_shifted: "{{REFERENCE_DATA}}/poirot/gatk_mito/Homo_sapiens_assembly38.chrM.shifted_by_8000_bases.fasta"
+  blacklist: "{{REFERENCE_DATA}}/poirot/gatk_mito/blacklist_sites.hg38.chrM.bed"
 
 pbrun_deepvariant:
   container: "docker://nvcr.io/nvidia/clara/clara-parabricks:4.3.0-1"
@@ -328,7 +333,7 @@ svdb_merge:
 svdb_query:
   container: "docker://hydragenetics/svdb:2.8.2"
   db_string:
-    "--db /beegfs-storage/data/ref_data/wp3/svdb/svdb_create/manta_wgs_hg38_1.0.vcf.gz,/beegfs-storage/data/ref_data/wp3/svdb/svdb_create/cnvpytor_wgs_hg38_1.0.vcf.gz"
+    "--db {{REFERENCE_DATA}}/poirot/svdb_query/manta_wgs_hg38_1.0.vcf.gz,{{REFERENCE_DATA}}/poirot/svdb_query/cnvpytor_wgs_hg38_1.0.vcf.gz"
   extra: "--in_frq FRQ,FRQ --in_occ OCC,OCC --out_frq manta_AF,cnvpytor_AF --out_occ manta_OCC,cnvpytor_OCC "
 
 tabix:
@@ -354,11 +359,11 @@ vep_trio:
 vep_svdb:
   container: "docker://ensemblorg/ensembl-vep:release_110.1"
   vep_cache: "/beegfs-storage/data/ref_genomes/VEP/"
-  extra: "--assembly GRCh38 --check_existing --pick --custom file=/data/ref_data/gnomad/gnomad_sv/gnomad.v4.0.sv.vcf.gz,short_name=gnomad,fields=AF%CN_NONREF_FREQ%FILTER%ALGORITHMS%EVIDENCE%SVTYPE,format=vcf,reciprocal=1,overlap_cutoff=60,distance=1000,same_type=1"
+  extra: "--assembly GRCh38 --check_existing --pick --custom file={{REFERENCE_DATA}}/poirot/gnomad.v4.0.sv.vcf.gz,short_name=gnomad,fields=AF%CN_NONREF_FREQ%FILTER%ALGORITHMS%EVIDENCE%SVTYPE,format=vcf,reciprocal=1,overlap_cutoff=60,distance=1000,same_type=1"
 
 verifybamid2:
   container: "docker://hydragenetics/verifybamid2:2.0.1"
-  svd_mu: "/beegfs-storage/data/ref_data/verifybamid2/1000g.phase3.100k.b38.vcf.gz.dat.mu"
+  svd_mu: "{{REFERENCE_DATA}}/poirot/verifybamid2/1000g.phase3.100k.b38.vcf.gz.dat.mu"
 
 vt_decompose:
   container: "docker://hydragenetics/vt:2015.11.10"
