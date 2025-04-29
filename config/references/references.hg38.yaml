@@ -60,7 +60,7 @@
   
   peddy_sites:
     checksum: 736f74618ab09407ffa102bbb6475015
-    path: poirot/config/peddy/v0.4.8/GRCH38.bed
+    path: poirot/peddy/v0.4.8/GRCH38.bed
     type: file
     url: file:/beegfs-storage/data/ref_data/peddy/v0.4.8/GRCH38.bed
 
