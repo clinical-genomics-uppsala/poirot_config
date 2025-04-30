@@ -34,7 +34,7 @@
   mt_bwa:
     amb:
       checksum:  6749f645487281112c254ab829ea048c
-      path: poirot/gatk_mito/GCA_000001405.15_GRCh38_no_alt_analysis_set_GRCmasked.fasta.amb
+      path: poirot/gatk_mito/Homo_sapiens_assembly38.chrM.fasta.amb
       type: file
       url: file:/beegfs-storage/data/ref_data/gatk_mito/Homo_sapiens_assembly38.chrM.fasta.amb
     ann: 
