@@ -40,7 +40,7 @@ reference:
   exome_intervals: '{{REFERENCE_DATA}}/poirot/hg38_exome_comp_spikein_v2.0.2_targets_sorted.re_annotated.sorted.interval_list'
   fai: '{{REFERENCE_DATA}}/poirot/GCA_000001405.15_GRCh38_no_alt_analysis_set_GRCmasked.fasta.fai'
   fasta: '{{REFERENCE_DATA}}/poirot/GCA_000001405.15_GRCh38_no_alt_analysis_set_GRCmasked.fasta'
-  genepanels: config/gene_panels/genepanels_WGS.list
+  genepanels: '{{REFERENCE_DATA}}/poirot/config/gene_panels/genepanels_WGS.list'
   merge_contigs:
   - .*_random
   - chrUn_.*
@@ -50,7 +50,7 @@ reference:
   - ataxi.list
   - dystoni.list
   - spastisk_paraplegi.list
-  str_panels_dir: config/str_panels
+  str_panels_dir: '{{REFERENCE_DATA}}/poirot/config/str_panels'
   wgs_intervals: '{{REFERENCE_DATA}}/poirot/homo_sapiens.hg38.wgs.interval_list'
 
 trimmer_software: fastp_pe
@@ -272,13 +272,13 @@ mt_reference:
 
 pbrun_deepvariant:
   container: '{{APPTAINER_CACHE}}/nvcr.io__nvidia__clara__clara-parabricks_4.3.0-1.sif'
-  extra: '--num-cpu-threads-per-stream 5 --num-streams-per-gpu 2 --disable-use-window-selector-model
+  extra: '--num-cpu-threads-per-stream 8  --num-streams-per-gpu 4 --disable-use-window-selector-model
     --gvcf '
   tmp_dir: /tmp/
 
 pbrun_fq2bam:
   container: '{{APPTAINER_CACHE}}/nvcr.io__nvidia__clara__clara-parabricks_4.3.0-1.sif'
-  extra: '--gpusort --gpuwrite --num-cpu-threads-per-stage 10 '
+  extra: '--gpusort --gpuwrite --bwa-cpu-thread-pool 16 '
   tmp_dir: /tmp/
 
 peddy:
@@ -359,17 +359,17 @@ vep:
   container: '{{APPTAINER_CACHE}}/ensemblorg__ensembl-vep_release_110.1.sif'
   extra: --assembly GRCh38 --check_existing --pick --sift b --polyphen b --ccds --symbol
     --af --af_1kg --af_gnomad --max_af
-  vep_cache: /beegfs-storage/data/ref_genomes/VEP/
+  vep_cache: '{{REFERENCE_DATA}}/poirot/VEP/'
 
 vep_trio:
   container: '{{APPTAINER_CACHE}}/ensemblorg__ensembl-vep_release_110.1.sif'
   extra: --assembly GRCh38 --check_existing --pick --max_af --buffer_size 50000
-  vep_cache: /beegfs-storage/data/ref_genomes/VEP/
+  vep_cache: '{{REFERENCE_DATA}}/poirot/VEP/'
 
 vep_svdb:
   container: '{{APPTAINER_CACHE}}/ensemblorg__ensembl-vep_release_110.1.sif'
   extra: --assembly GRCh38 --check_existing --pick --custom file={{REFERENCE_DATA}}/poirot/gnomad.v4.0.sv.vcf.gz,short_name=gnomad,fields=AF%CN_NONREF_FREQ%FILTER%ALGORITHMS%EVIDENCE%SVTYPE,format=vcf,reciprocal=1,overlap_cutoff=60,distance=1000,same_type=1
-  vep_cache: /beegfs-storage/data/ref_genomes/VEP/
+  vep_cache: '{{REFERENCE_DATA}}/poirot/VEP/'
 
 verifybamid2:
   container: '{{APPTAINER_CACHE}}/hydragenetics__verifybamid2_2.0.1.sif'
