@@ -25,6 +25,11 @@
       path: poirot/gatk_mito/blacklist_sites.hg38.chrM.bed
       type: file
       url: file:/beegfs-storage/data/ref_data/gatk_mito/blacklist_sites.hg38.chrM.bed
+    blacklist_sites.hg38.chrM.bed.idx:
+      checksum: 73ba81ce6d3fe2ac415707975a3a46d3
+      path: poirot/gatk_mito/blacklist_sites.hg38.chrM.bed.idx
+      type: file
+      url: file:/beegfs-storage/data/ref_data/gatk_mito/blacklist_sites.hg38.chrM.bed.idx
     ShiftBack.chain:
       checksum: a65673402f6dce44c7acc449efa017d6
       path: poirot/gatk_mito/ShiftBack.chain
