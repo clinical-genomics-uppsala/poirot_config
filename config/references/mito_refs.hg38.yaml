@@ -30,7 +30,18 @@
       path: poirot/gatk_mito/control_region_shifted.chrM.interval_list
       type: file
       url: file:/beegfs-storage/data/ref_data/gatk_mito/control_region_shifted.chrM.interval_list
-      
+    Homo_sapiens_assembly38.chrM.dict:
+      checksum: 8d3fdf1d4618f96740332db5e13fb81d
+      path: poirot/gatk_mito/Homo_sapiens_assembly38.chrM.dict
+      type: file
+      url: file:/beegfs-storage/data/ref_data/gatk_mito/Homo_sapiens_assembly38.chrM.dict
+    Homo_sapiens_assembly38.chrM.shifted_by_8000_bases.dict:
+      checksum: 1643884a081edb12dd8c7d5fc1e57920
+      path: poirot/gatk_mito/Homo_sapiens_assembly38.chrM.shifted_by_8000_bases.dict
+      type: file
+      url: file:/beegfs-storage/data/ref_data/gatk_mito/Homo_sapiens_assembly38.chrM.shifted_by_8000_bases.dict
+   
+
   mt_bwa:
     amb:
       checksum:  6749f645487281112c254ab829ea048c

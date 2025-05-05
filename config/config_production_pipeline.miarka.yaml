@@ -135,7 +135,7 @@ deepvariant:
 
 expansionhunter:
   container: '{{APPTAINER_CACHE}}/hydragenetics__expansionhunter_5.0.0.sif'
-  variant_catalog: config/str_catalog/variant_catalog_hg38.json
+  variant_catalog: '{{REFERENCE_DATA}}/poirot/config/str_catalog/variant_catalog_hg38.json'
 
 fastp_pe:
   container: '{{APPTAINER_CACHE}}/hydragenetics__fastp_0.20.1.sif'
@@ -330,7 +330,7 @@ spring:
   container: '{{APPTAINER_CACHE}}/hydragenetics__spring_1.1.1.sif'
 
 stranger:
-  catalog: config/str_catalog/variant_catalog_hg38.json
+  catalog: '{{REFERENCE_DATA}}/poirot/config/str_catalog/variant_catalog_hg38.json'
   container: '{{APPTAINER_CACHE}}/hydragenetics__stranger_0.8.1.sif'
 
 svdb_merge:
