@@ -77,11 +77,23 @@
       url: file:/beegfs-storage/data/ref_data/wp3/svdb/svdb_create/manta_wgs_hg38_1.0.vcf.gz
   
   verifybamid:
-    checksum: e487244f85c53b66865c34b588341e50
-    path: poirot/verifybamid2/1000g.phase3.100k.b38.vcf.gz.dat.mu
-    type: file
-    url: file:/beegfs-storage/data/ref_data/verifybamid2/1000g.phase3.100k.b38.vcf.gz.dat.mu
-  
+    mu:
+      checksum: e487244f85c53b66865c34b588341e50
+      path: poirot/verifybamid2/1000g.phase3.100k.b38.vcf.gz.dat.mu
+      type: file
+      url: file:/beegfs-storage/data/ref_data/verifybamid2/1000g.phase3.100k.b38.vcf.gz.dat.mu
+    bed:
+      checksum: 689f507dc1f281dfe35880315a5ac19c
+      path: poirot/verifybamid2/1000g.phase3.100k.b38.vcf.gz.dat.bed
+      type: file
+      url: file:/beegfs-storage/data/ref_data/verifybamid2/1000g.phase3.100k.b38.vcf.gz.dat.bed
+    UD:
+      checksum: e93de9cf95d30486606e3f35b381d93c
+      path: poirot/verifybamid2/1000g.phase3.100k.b38.vcf.gz.dat.UD
+      type: file
+      url: file:/beegfs-storage/data/ref_data/verifybamid2/1000g.phase3.100k.b38.vcf.gz.dat.UD
+
+
   bwa_mem:
     amb:
       checksum: f84b47b7ec12946b92d9762cec04b835 
