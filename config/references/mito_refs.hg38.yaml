@@ -5,11 +5,21 @@
       path: poirot/gatk_mito/Homo_sapiens_assembly38.chrM.fasta
       type: file
       url: file:/beegfs-storage/data/ref_data/gatk_mito/Homo_sapiens_assembly38.chrM.fasta
+    Homo_sapiens_assembly38.chrM.fasta.fai:
+      checksum: b169b3777e520dd645eb8f06191e013f
+      path: poirot/gatk_mito/Homo_sapiens_assembly38.chrM.fasta.fai
+      type: file
+      url: file:/beegfs-storage/data/ref_data/gatk_mito/Homo_sapiens_assembly38.chrM.fasta.fai  
     Homo_sapiens_assembly38.chrM.shifted_by_8000_bases.fasta:
       checksum: 43293e2272acb908db29099cd0f9ebc5
       path: poirot/gatk_mito/Homo_sapiens_assembly38.chrM.shifted_by_8000_bases.fasta
       type: file
       url: file:/beegfs-storage/data/ref_data/gatk_mito/Homo_sapiens_assembly38.chrM.shifted_by_8000_bases.fasta
+    Homo_sapiens_assembly38.chrM.shifted_by_8000_bases.fasta.fai:
+      checksum: b169b3777e520dd645eb8f06191e013f
+      path: poirot/gatk_mito/Homo_sapiens_assembly38.chrM.shifted_by_8000_bases.fasta.fai
+      type: file
+      url: file:/beegfs-storage/data/ref_data/gatk_mito/Homo_sapiens_assembly38.chrM.shifted_by_8000_bases.fasta.fai
     blacklist_sites.hg38.chrM.bed:
       checksum: 9d19d05152c50d7cd4ac3647c8c4dfd9
       path: poirot/gatk_mito/blacklist_sites.hg38.chrM.bed
@@ -41,7 +51,6 @@
       type: file
       url: file:/beegfs-storage/data/ref_data/gatk_mito/Homo_sapiens_assembly38.chrM.shifted_by_8000_bases.dict
    
-
   mt_bwa:
     amb:
       checksum:  6749f645487281112c254ab829ea048c
