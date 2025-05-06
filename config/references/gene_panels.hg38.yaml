@@ -1,7 +1,7 @@
 ---
   reference:
     genepanels:
-      checksum: b1679fcfd25da3a146b9330c2ab9d801  
+      checksum: ca308beba0c5d2eea73af44021ad7c06  
       path: poirot/config/gene_panels/genepanels_WGS.list
       type: file
       url: file:poirot_config/config/gene_panels/genepanels_WGS.list
@@ -130,6 +130,11 @@
       checksum: 1aec2b03e5e73bd31cb9d3c63bfdea5d
       type: file
       url: file:poirot_config/config/gene_panels/Kraniosynostos.list
+    MODY_lipodystrophy:
+      path: poirot/config/gene_panels/MODY_lipodystrophy.list 
+      checksum: d41d8cd98f00b204e9800998ecf8427e
+      type: file
+      url: file:poirot_config/config/gene_panels/MODY_lipodystrophy.list 
     Neuromuskular:
       path: poirot/config/gene_panels/Neuromuskular.list
       checksum: 1b27d5842c2874d6fd9f1920beabfb5f
