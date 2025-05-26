@@ -22,7 +22,7 @@
       type: file
       url: file:/beegfs-storage/data/ref_genomes/GRCh38/GRCmasked/homo_sapiens.hg38.wgs.bed
     exome_bed:
-      checksum: f8a920a0983b7fe9998be30d5ee18810
+      checksum: eb7560e7955cbb7ed4aa33a5b50a36d6
       path: poirot/hg38_exome_comp_spikein_v2.0.2_targets_sorted.re_annotated.sorted.bed
       type: file
       url: file:/data/ref_data/wp3/hastings/hg38_exome_comp_spikein_v2.0.2_targets_sorted.re_annotated.sorted.bed
@@ -51,6 +51,11 @@
       path: poirot/GRCh38_chromosomes.bed.gz
       type: file
       url: file:/beegfs-storage/data/ref_genomes/GRCh38/GRCmasked/GRCh38_chromosomes.bed.gz
+    GRCh38_chromosomes_index:
+      checksum: 3b115d2350fe850cb051a6133ee3659a
+      path: poirot/GRCh38_chromosomes.bed.gz.tbi
+      type: file
+      url: file:/beegfs-storage/data/ref_genomes/GRCh38/GRCmasked/GRCh38_chromosomes.bed.gz.tbi
   
   gnomad_sv_vcf:
     checksum: 16cac79cd6846346396d54ad3c14ef0f
