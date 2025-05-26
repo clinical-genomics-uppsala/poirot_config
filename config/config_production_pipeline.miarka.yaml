@@ -1,4 +1,4 @@
-PIPELINE_VERSION: v0.8.0
+PIPELINE_VERSION: v0.7.0
 
 REFERENCE_DATA: /proj/ngi2024001/nobackup/bin/wp3_hg/design_and_ref_files
 
@@ -28,7 +28,7 @@ modules:
   filtering: v0.3.0
   misc: v0.2.0
   mitochondrial: v0.1.0
-  parabricks: v1.2.0
+  parabricks: v1.2.1
   prealignment: v1.2.0
   qc: v0.5.0
   snv_indels: v1.0.0
@@ -274,12 +274,12 @@ pbrun_deepvariant:
   container: '{{APPTAINER_CACHE}}/nvcr.io__nvidia__clara__clara-parabricks_4.3.0-1.sif'
   extra: '--num-cpu-threads-per-stream 8  --num-streams-per-gpu 4 --disable-use-window-selector-model
     --gvcf '
-  tmp_dir: /tmp/
+  tmp_dir: "/tmp"
 
 pbrun_fq2bam:
   container: '{{APPTAINER_CACHE}}/nvcr.io__nvidia__clara__clara-parabricks_4.3.0-1.sif'
-  extra: '--gpusort --gpuwrite --bwa-cpu-thread-pool 16 '
-  tmp_dir: /tmp/
+  extra: '--gpusort --gpuwrite --num-cpu-threads-per-stage 16 '
+  tmp_dir: "/tmp"
 
 peddy:
   config: config/peddy_mqc.yaml
@@ -337,11 +337,11 @@ svdb_merge:
   container: '{{APPTAINER_CACHE}}/hydragenetics__svdb_2.8.2.sif'
   extra: '--pass_only --no_intra '
   overlap: 0.6
-  priority: manta,cnvpytor
+  priority: 'manta,cnvpytor'
 
 svdb_query:
   container: '{{APPTAINER_CACHE}}/hydragenetics__svdb_2.8.2.sif'
-  db_string: --db {{REFERENCE_DATA}}/poirot/svdb_query/manta_wgs_hg38_1.0.vcf.gz,{{REFERENCE_DATA}}/poirot/svdb_query/cnvpytor_wgs_hg38_1.0.vcf.gz
+  db_string: '--db {{REFERENCE_DATA}}/poirot/svdb_query/manta_wgs_hg38_1.0.vcf.gz,{{REFERENCE_DATA}}/poirot/svdb_query/cnvpytor_wgs_hg38_1.0.vcf.gz'
   extra: '--in_frq FRQ,FRQ --in_occ OCC,OCC --out_frq manta_AF,cnvpytor_AF --out_occ
     manta_OCC,cnvpytor_OCC '
 
@@ -357,18 +357,21 @@ upd:
 
 vep:
   container: '{{APPTAINER_CACHE}}/ensemblorg__ensembl-vep_release_110.1.sif'
-  extra: --assembly GRCh38 --check_existing --pick --sift b --polyphen b --ccds --symbol
-    --af --af_1kg --af_gnomad --max_af
+  extra: '--assembly GRCh38 --check_existing --pick --sift b --polyphen b --ccds --symbol
+    --af --af_1kg --af_gnomad --max_af'
+  mode: "--offline --cache --refseq "
   vep_cache: '{{REFERENCE_DATA}}/poirot/VEP/'
 
 vep_trio:
   container: '{{APPTAINER_CACHE}}/ensemblorg__ensembl-vep_release_110.1.sif'
-  extra: --assembly GRCh38 --check_existing --pick --max_af --buffer_size 50000
+  mode: "--offline --cache --refseq "
+  extra: "--assembly GRCh38 --check_existing --pick --max_af --buffer_size 50000"
   vep_cache: '{{REFERENCE_DATA}}/poirot/VEP/'
 
 vep_svdb:
   container: '{{APPTAINER_CACHE}}/ensemblorg__ensembl-vep_release_110.1.sif'
-  extra: --assembly GRCh38 --check_existing --pick --custom file={{REFERENCE_DATA}}/poirot/gnomad.v4.0.sv.vcf.gz,short_name=gnomad,fields=AF%CN_NONREF_FREQ%FILTER%ALGORITHMS%EVIDENCE%SVTYPE,format=vcf,reciprocal=1,overlap_cutoff=60,distance=1000,same_type=1
+  extra: "--assembly GRCh38 --check_existing --pick --custom file={{REFERENCE_DATA}}/poirot/gnomad.v4.0.sv.vcf.gz,short_name=gnomad,fields=AF%CN_NONREF_FREQ%FILTER%ALGORITHMS%EVIDENCE%SVTYPE,format=vcf,reciprocal=1,overlap_cutoff=60,distance=1000,same_type=1"
+  mode: "--offline --cache --refseq "
   vep_cache: '{{REFERENCE_DATA}}/poirot/VEP/'
 
 verifybamid2:
