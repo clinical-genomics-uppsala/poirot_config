@@ -42,6 +42,8 @@ deepvariant:
 
 expansionhunter:
   threads: 16
+  mem_mb: 98304
+  mem_per_cpu: 6144
 
 fastp_pe:
   threads: 8
@@ -78,6 +80,7 @@ gatk_sort_sam:
   mem_per_cpu: 4096
 
 glnexus:
+  mem_mb: 196608
   threads: 24
 
 manta_run_workflow_n:
@@ -108,6 +111,8 @@ pbrun_deepvariant:
   threads: 32
 
 peddy:
+  mem_mb: 49152
+  mem_per_cpu: 6144
   threads: 8
 
 samtools_stats:
@@ -136,6 +141,8 @@ samtools_view:
   threads: 8
   
 smn_caller:
+  mem_mb: 49152
+  mem_per_cpu: 6144
   threads: 8
 
 spring:
@@ -145,7 +152,11 @@ spring:
 
 tiddit:
   threads: 8
+  mem_mb: 49152
+  mem_per_cpu: 6144
   time: "20:00:00"
 
 vep:
   threads: 4
+  mem_mb: 24576
+  mem_per_cpu: 6144
