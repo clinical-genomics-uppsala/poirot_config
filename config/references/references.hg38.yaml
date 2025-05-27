@@ -63,6 +63,12 @@
     type: file
     url: file:/data/ref_data/gnomad/gnomad_sv/gnomad.v4.0.sv.vcf.gz
   
+  gnomad_sv_vcf_index:
+    checksum: 16cac79cd6846346396d54ad3c14ef0f
+    path: poirot/gnomad.v4.0.sv.vcf.gz.tbi
+    type: file
+    url: file:/data/ref_data/gnomad/gnomad_sv/gnomad.v4.0.sv.vcf.gz.tbi
+  
   peddy_sites:
     checksum: 736f74618ab09407ffa102bbb6475015
     path: poirot/peddy/v0.4.8/GRCH38.bed
