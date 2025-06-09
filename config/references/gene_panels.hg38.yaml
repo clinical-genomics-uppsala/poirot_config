@@ -105,6 +105,11 @@
       checksum: ef6251a88cd084c5dd938e9572fdc08d
       type: file
       url: file:poirot_config/config/gene_panels/HSP.list
+    Hyperlipidemi_v1:
+      path: poirot/config/gene_panels/Hyperlipidemi_v1.list
+      checksum: a952c3e9e3789958f01585984a5742d2
+      type: file
+      url: file:poirot_config/config/gene_panels/Hyperlipidemi_v1.list
     Hyperparatyreoidism:
       path: poirot/config/gene_panels/Hyperparatyreoidism.list
       checksum: e96cc9a6b37069dab17ca2264b0d531d
