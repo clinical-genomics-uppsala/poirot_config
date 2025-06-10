@@ -103,6 +103,12 @@
       path: poirot/verifybamid2/1000g.phase3.100k.b38.vcf.gz.dat.UD
       type: file
       url: file:/beegfs-storage/data/ref_data/verifybamid2/1000g.phase3.100k.b38.vcf.gz.dat.UD
+    V:
+      checksum: 8de3d2e20b6e391e8141829009c1e3e2
+      path: poirot/verifybamid2/1000g.phase3.100k.b38.vcf.gz.dat.V
+      type: file
+      url: file:/beegfs-storage/data/ref_data/verifybamid2/1000g.phase3.100k.b38.vcf.gz.dat.V
+    
 
 
   bwa_mem:
