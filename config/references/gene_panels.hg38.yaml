@@ -137,7 +137,7 @@
       url: file:poirot_config/config/gene_panels/Kraniosynostos.list
     MODY_lipodystrophy:
       path: poirot/config/gene_panels/MODY_lipodystrophy.list 
-      checksum: d41d8cd98f00b204e9800998ecf8427e
+      checksum: eea351479f7c2ad321211c64031318d2
       type: file
       url: file:poirot_config/config/gene_panels/MODY_lipodystrophy.list 
     Neuromuskular:
