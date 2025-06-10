@@ -98,17 +98,19 @@ mosdepth_bed:
 
 pbrun_fq2bam:
   gres: "--gres=gres:gpu:l40s:3"
-  mem_mb: 160000
-  mem_per_cpu: 5000
+  mem_mb: 192000
+  mem_per_cpu: 6000
   partition: "gpu"
   threads: 32
+  time: "02:00:00"
 
 pbrun_deepvariant:
-  gres: "--gres=gres:gpu:l40s:3"
-  mem_mb: 160000
+  gres: "--gres=gres:gpu:a100:4"
+  mem_mb: 480000
   mem_per_cpu: 5000
   partition: "gpu"
-  threads: 32
+  threads: 96
+  time: "02:00:00"
 
 peddy:
   mem_mb: 49152
@@ -157,6 +159,6 @@ tiddit:
   time: "20:00:00"
 
 vep:
-  threads: 4
   mem_mb: 24576
   mem_per_cpu: 6144
+  threads: 4  
