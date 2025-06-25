@@ -1,0 +1,18 @@
+---
+
+  str_panels:
+    ataxi:
+      checksum: 1b5f1849d646e889115bc8b30c0e7ccf
+      path: poirot/config/str_panels/ataxi.list
+      type: file
+      url: file:poirot_config/config/str_panels/ataxi.list
+    dystoni:
+      checksum: ab4e126f9a41ff3ab1ad985aef10b08a
+      path: poirot/config/str_panels/dystoni.list
+      type: file
+      url: file:poirot_config/config/str_panels/dystoni.list
+    spastisk_paraplegi:
+      checksum: 77d7630c715ec9c9bdfdbdd094cd4166
+      path: poirot/config/str_panels/spastisk_paraplegi.list
+      type: file
+      url: file:poirot_config/config/str_panels/spastisk_paraplegi.list
