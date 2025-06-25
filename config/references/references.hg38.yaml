@@ -12,7 +12,7 @@
       type: file
       url: file:/beegfs-storage/data/ref_genomes/GRCh38/GRCmasked/GCA_000001405.15_GRCh38_no_alt_analysis_set_GRCmasked.fasta.fai
     coverage_bed:
-      checksum: be9eeea059b8cdae8bd119f432884688 
+      checksum: a028a17f7d3edd43b846667889c5575e 
       path: poirot/GCF_000001405.40-RS_2024_08_coverage.bed
       type: file
       url: file:/beegfs-storage/data/ref_data/refseq/GCF_000001405.40-RS_2024_08_coverage.bed
