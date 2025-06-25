@@ -1,5 +1,23 @@
 # Changelog
 
+## [0.10.0](https://www.github.com/clinical-genomics-uppsala/poirot_config/compare/v0.9.0...v0.10.0) (2025-06-25)
+
+
+### Features
+
+* add Hyperlipidemi_v1 panel ([7756edc](https://www.github.com/clinical-genomics-uppsala/poirot_config/commit/7756edc1ab33cae4a04c3f6034d140dc1624147d))
+* add miarka configs and reference md5sum yaml files ([9809414](https://www.github.com/clinical-genomics-uppsala/poirot_config/commit/98094143d861d615184309d2ea131914ee505c17))
+* add MODY_lipodystrophy gene panel ([9796874](https://www.github.com/clinical-genomics-uppsala/poirot_config/commit/979687484f6a03990ac7e38883a6e6096624324a))
+* add MODY_lipodystrophy panel ([c830563](https://www.github.com/clinical-genomics-uppsala/poirot_config/commit/c83056378c8132a76890f75dcd7ee9f31adbf5a1))
+* update ataxi, neuromuscular, Neuropati, add Bred_NMD ([6a1c888](https://www.github.com/clinical-genomics-uppsala/poirot_config/commit/6a1c88850b40cce05404a2ca820e9b7cf2146bbf))
+* update coverage bed file ([837da82](https://www.github.com/clinical-genomics-uppsala/poirot_config/commit/837da829d37d4b2a22c262d412455429d75223ea))
+* update to the new coverage file ([c9bf0d5](https://www.github.com/clinical-genomics-uppsala/poirot_config/commit/c9bf0d523212ea7872dfea95aa8ceb206ebe45e5))
+
+
+### Bug Fixes
+
+* update panels to use HGNC approved symbols and fix typos ([7bb0a65](https://www.github.com/clinical-genomics-uppsala/poirot_config/commit/7bb0a656af2eb563373a804ec5038a0ab0a4f792))
+
 ## [0.9.0](https://www.github.com/clinical-genomics-uppsala/poirot_config/compare/v0.8.0...v0.9.0) (2025-02-28)
 
 
