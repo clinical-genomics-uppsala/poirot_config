@@ -12,10 +12,10 @@
       type: file
       url: file:/beegfs-storage/data/ref_genomes/GRCh38/GRCmasked/GCA_000001405.15_GRCh38_no_alt_analysis_set_GRCmasked.fasta.fai
     coverage_bed:
-      checksum: d9bbb903ce5ff7dcf84545a1f1566b0a 
-      path: poirot/refseq_select_mane_with_MT_with_non_coding_20241010.bed
+      checksum: a028a17f7d3edd43b846667889c5575e 
+      path: poirot/GCF_000001405.40-RS_2024_08_coverage.bed
       type: file
-      url: file:/beegfs-storage/data/ref_data/refseq/refseq_select_mane_with_MT_with_non_coding_20241010.bed
+      url: file:/beegfs-storage/data/ref_data/refseq/GCF_000001405.40-RS_2024_08_coverage.bed
     design_bed:
       checksum: 5b0df2472fd0880aad8e85c583a97232
       path: poirot/homo_sapiens.hg38.wgs.bed
