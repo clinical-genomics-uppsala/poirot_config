@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.11.0](https://github.com/clinical-genomics-uppsala/poirot_config/compare/v0.10.0...v0.11.0) (2025-09-23)
+
+
+### Features
+
+* Update coverage_bed path in production marvin config ([0ff5e2c](https://github.com/clinical-genomics-uppsala/poirot_config/commit/0ff5e2cf1288fcfe8bc9912c6db8299a03a684f5))
+* update gene panels amd md5 checksums ([299e69c](https://github.com/clinical-genomics-uppsala/poirot_config/commit/299e69cbc1f1d1dea2bd276eac523795ae4a5b11))
+
 ## [0.10.0](https://www.github.com/clinical-genomics-uppsala/poirot_config/compare/v0.9.0...v0.10.0) (2025-06-25)
 
 
