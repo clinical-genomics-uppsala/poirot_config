@@ -34,7 +34,7 @@ modules:
   snv_indels: v1.0.0
 
 reference:
-  coverage_bed: '{{REFERENCE_DATA}}/poirot/refseq_select_mane_with_MT_with_non_coding_20241010.bed'
+  coverage_bed: '{{REFERENCE_DATA}}/poirot/GCF_000001405.40-RS_2024_08_coverage_20250916.bed'
   design_bed: '{{REFERENCE_DATA}}/poirot/homo_sapiens.hg38.wgs.bed'
   exome_bed: '{{REFERENCE_DATA}}/poirot/hg38_exome_comp_spikein_v2.0.2_targets_sorted.re_annotated.sorted.bed'
   exome_intervals: '{{REFERENCE_DATA}}/poirot/hg38_exome_comp_spikein_v2.0.2_targets_sorted.re_annotated.sorted.interval_list'
