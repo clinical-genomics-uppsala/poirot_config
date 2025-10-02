@@ -202,7 +202,7 @@
       url: file:poirot_config/config/gene_panels/Njurcancer.list
     Njursjukdomar_v2:
       path: poirot/config/gene_panels/Njursjukdomar_v2.list
-      checksum: 1f7cecb8fc264ea9896d92f7a4cbf1cd
+      checksum: fcd16139be51a12c60132f03a4a20cc9
       type: file
       url: file:poirot_config/config/gene_panels/Njursjukdomar_v2.list
     OI_och_benskorhet:
@@ -242,7 +242,7 @@
       url: file:poirot_config/config/gene_panels/Paragangliom_feokromocytom_v2.list
     PCD_v2:
       path: poirot/config/gene_panels/PCD_v2.list
-      checksum: d578941fde1a3f36fcc73eb2e073d48c
+      checksum: a13b3a3657dc04f35d5a5f26d32ce21d
       type: file
       url: file:poirot_config/config/gene_panels/PCD_v2.list
     Periodisk_feber_v2:
@@ -252,7 +252,7 @@
       url: file:poirot_config/config/gene_panels/Periodisk_feber_v2.list
     Periodisk_paralys_v2:
       path: poirot/config/gene_panels/Periodisk_paralys_v2.list
-      checksum: 0275a59c3636552cbb4d01303accf9bc
+      checksum: 6a0af95b9e31d7dbbc2bf14ee4124a5e
       type: file
       url: file:poirot_config/config/gene_panels/Periodisk_paralys_v2.list
     PPK_och_erytrodermi:
