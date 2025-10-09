@@ -1,5 +1,19 @@
 # Changelog
 
+## [0.12.0](https://github.com/clinical-genomics-uppsala/poirot_config/compare/v0.11.0...v0.12.0) (2025-10-09)
+
+
+### Features
+
+* add new and update genepanels ([667bdad](https://github.com/clinical-genomics-uppsala/poirot_config/commit/667bdad30373df679c28e3587d0e917e46e3fa2b))
+* last version of panels ([0658407](https://github.com/clinical-genomics-uppsala/poirot_config/commit/0658407520eaee63e2f292e1f1cbfc07016ec4f6))
+* update md5 checksum ([6ffdd72](https://github.com/clinical-genomics-uppsala/poirot_config/commit/6ffdd7237fd7f777722aebc0331f01eeb99f5b68))
+
+
+### Bug Fixes
+
+* to long gene-list name ([c1359eb](https://github.com/clinical-genomics-uppsala/poirot_config/commit/c1359ebc063d87087fa6348a3bbb757b6b98123b))
+
 ## [0.11.0](https://github.com/clinical-genomics-uppsala/poirot_config/compare/v0.10.0...v0.11.0) (2025-09-23)
 
 
