@@ -160,11 +160,11 @@
       checksum: 3893f0bb9eb20754ef8dc471a550a4ca 
       type: file
       url: file:poirot_config/config/gene_panels/Immun.list
-    Intestinal_pseudo_obstruktion_v1:
-      path: poirot/config/gene_panels/Intestinal_pseudo_obstruktion_v1.list
+    Intestinal_obstruktion_v1:
+      path: poirot/config/gene_panels/Intestinal_obstruktion_v1.list
       checksum: 2663ec41d32b5928933389a841c4fa82 
       type: file
-      url: file:poirot_config/config/gene_panels/Intestinal_pseudo_obstruktion_v1.list
+      url: file:poirot_config/config/gene_panels/Intestinal_obstruktion_v1.list
     Kardio:
       path: poirot/config/gene_panels/Kardio.list
       checksum: 761fdf007fee2f2f4b45b37f8ae81a3e
