@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.12.1](https://github.com/clinical-genomics-uppsala/poirot_config/compare/v0.12.0...v0.12.1) (2025-10-15)
+
+
+### Bug Fixes
+
+* remove pseudo from Intestinal panel name gene_panels.hg38.yaml ([b007c7b](https://github.com/clinical-genomics-uppsala/poirot_config/commit/b007c7bfe8cfdeca41ba600726b12725c9cc56b2))
+
+
+### Documentation
+
+* Update README with gene panel name limit ([2716ae0](https://github.com/clinical-genomics-uppsala/poirot_config/commit/2716ae063cc2946ccf6f451b760db94cc9597add))
+
 ## [0.12.0](https://github.com/clinical-genomics-uppsala/poirot_config/compare/v0.11.0...v0.12.0) (2025-10-09)
 
 
