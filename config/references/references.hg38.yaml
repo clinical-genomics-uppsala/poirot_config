@@ -68,7 +68,39 @@
     path: poirot/gnomad.v4.0.sv.vcf.gz.tbi
     type: file
     url: file:/data/ref_data/gnomad/gnomad_sv/gnomad.v4.0.sv.vcf.gz.tbi
-  
+
+    melt:
+    bed:
+      checksum: b7cc511549a1ee6fd5a3ba73955a10ae
+      path: poirot/melt/Hg38.genes.bed
+      type: file
+      url: file:/beegfs-storage/data/ref_data/wp3/melt/Hg38.genes.bed
+    mei:
+      checksum: 
+      path: poirot/melt/mei_list.txt
+      type: file
+      url: file:/beegfs-storage/data/ref_data/wp3/melt/mei_poirot_list.txt
+    alu:
+      checksum: 8e2bf5db30c7053c640ba8aaa4ded716
+      path: poirot/melt/me_refs/Hg38/ALU_MELT.zip 
+      type: folder
+      url: file:/beegfs-storage/data/ref_data/wp3/melt/me_refs/Hg38/ALU_MELT.zip 
+    hervk:
+      checksum: 8672106ec4205e5787217204e7186038 
+      path: poirot/melt/me_refs/Hg38/HERVK_MELT.zip
+      type: folder
+      url: file:/beegfs-storage/data/ref_data/wp3/melt/me_refs/Hg38/HERVK_MELT.zip
+    line1:
+      checksum: d53f11c7e8e0805c8e44b42309855909 
+      path: poirot/melt/me_refs/Hg38/LINE1_MELT.zip
+      type: folder
+      url: file:/beegfs-storage/data/ref_data/wp3/melt/me_refs/Hg38/LINE1_MELT.zip
+    sva:
+      checksum: 159093e9fecc796f11382fb29340d011
+      path: poirot/melt/me_refs/Hg38/SVA_MELT.zip
+      type: folder
+      url: file:/beegfs-storage/data/ref_data/wp3/melt/me_refs/Hg38/SVA_MELT.zip
+
   peddy_sites:
     checksum: 736f74618ab09407ffa102bbb6475015
     path: poirot/peddy/v0.4.8/GRCH38.bed
