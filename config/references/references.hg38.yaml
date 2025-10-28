@@ -76,7 +76,7 @@
       type: file
       url: file:/beegfs-storage/data/ref_data/wp3/melt/Hg38.genes.bed
     mei:
-      checksum: 
+      checksum: 392c043e2d95111a6dacd8e20cb31f82
       path: poirot/melt/mei_list.txt
       type: file
       url: file:/beegfs-storage/data/ref_data/wp3/melt/mei_poirot_list.txt
