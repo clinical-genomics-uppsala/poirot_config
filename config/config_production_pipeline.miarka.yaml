@@ -62,6 +62,7 @@ automap:
   outdir: cnv_sv/automap
 
 bcftools_split_vep:
+  container: '{{APPTAINER_CACHE}}/hydragenetics__common_1.11.1.sif'
   columns: gnomad_AF:Float
 
 bcftools_view_biallelic:
