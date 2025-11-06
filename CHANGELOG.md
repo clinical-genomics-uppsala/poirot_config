@@ -1,5 +1,24 @@
 # Changelog
 
+## [0.13.0](https://github.com/clinical-genomics-uppsala/poirot_config/compare/v0.12.1...v0.13.0) (2025-11-06)
+
+
+### Features
+
+* add MELT ([b9bdeb4](https://github.com/clinical-genomics-uppsala/poirot_config/commit/b9bdeb4aedc01824ba09aba8d5fa9f8a0700d6bc))
+
+
+### Bug Fixes
+
+* --fix-mate to pbrun_fq2bam and -r 150 to melt ([b7bb9c3](https://github.com/clinical-genomics-uppsala/poirot_config/commit/b7bb9c3f6ae6454958b27dbff4cbd47704353200))
+* add md5sum on mei_list.,txt ([50b7413](https://github.com/clinical-genomics-uppsala/poirot_config/commit/50b74138eb406ab2ca5228c2e87026974e88e8d9))
+* apptainer_cache and snakemake-wrappers not pipeline version dependent ([0d44db2](https://github.com/clinical-genomics-uppsala/poirot_config/commit/0d44db2cead657b8d56d8a4b5401c4572af55c58))
+* bcftools split-vep need old version of common container ([1f54b96](https://github.com/clinical-genomics-uppsala/poirot_config/commit/1f54b96566cda4e6b52ee8783f8fd58ac1cfc92e))
+* cnv_sv version ([c6388a8](https://github.com/clinical-genomics-uppsala/poirot_config/commit/c6388a8c9ccb1f85540b69150cf64bd1b950678a))
+* Modify APPTAINER_CACHE path in production config ([17389be](https://github.com/clinical-genomics-uppsala/poirot_config/commit/17389beb21c3b11e0e07c05e25bd8e61bb671768))
+* more memory for MELT ([bab1eb0](https://github.com/clinical-genomics-uppsala/poirot_config/commit/bab1eb0385b8628ea1242d72726715ff6b32ed99))
+* new pipeline version for Poirot too ([f10e2f4](https://github.com/clinical-genomics-uppsala/poirot_config/commit/f10e2f44cdaa204409c1736ad833d7b443c92d0f))
+
 ## [0.12.1](https://github.com/clinical-genomics-uppsala/poirot_config/compare/v0.12.0...v0.12.1) (2025-10-15)
 
 
