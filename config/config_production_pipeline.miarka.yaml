@@ -1,8 +1,7 @@
-PIPELINE_VERSION: v0.7.0
 
 REFERENCE_DATA: /proj/ngi2024001/nobackup/bin/wp3_hg/design_and_ref_files
 
-APPTAINER_CACHE: /proj/ngi2024001/nobackup/bin/wp3_hg/{{PIPELINE_VERSION}}/apptainer_cache
+APPTAINER_CACHE: /proj/ngi2024001/nobackup/bin/wp3_hg/apptainer_cache
 
 hydra_local_path: /proj/ngi2024001/nobackup/bin/wp3_hg/{{PIPELINE_VERSION}}/hydra-genetics
 
@@ -18,20 +17,20 @@ units: units.tsv
 
 output: config/output_list.json
 
-default_container: '{{APPTAINER_CACHE}}/hydragenetics__common_1.11.1.sif'
+default_container: '{{APPTAINER_CACHE}}/hydragenetics__common_3.1.1.sif'
 
 modules:
-  alignment: v0.6.0
-  annotation: v1.0.1
-  cnv_sv: v0.5.0
-  compression: v2.0.0
-  filtering: v0.3.0
-  misc: v0.2.0
-  mitochondrial: v0.1.0
-  parabricks: v1.2.1
-  prealignment: v1.2.0
-  qc: v0.5.0
-  snv_indels: v1.0.0
+  alignment: "v0.7.0"
+  annotation: "v1.2.0"
+  cnv_sv: "v1.0.2"
+  compression: "v2.1.0"
+  filtering: "v1.1.0"
+  parabricks: "v1.2.1"
+  prealignment: "v1.4.0"
+  qc: "v0.6.0"
+  misc: "v0.2.0"
+  mitochondrial: "v0.1.0"
+  snv_indels: "v1.3.0"
 
 reference:
   coverage_bed: '{{REFERENCE_DATA}}/poirot/GCF_000001405.40-RS_2024_08_coverage_20250916.bed'
@@ -62,6 +61,7 @@ automap:
   outdir: cnv_sv/automap
 
 bcftools_split_vep:
+  container: '{{APPTAINER_CACHE}}/hydragenetics__common_1.11.1.sif'
   columns: gnomad_AF:Float
 
 bcftools_view_biallelic:
@@ -226,6 +226,12 @@ manta_config_n:
 manta_run_workflow_n:
   container: '{{APPTAINER_CACHE}}/hydragenetics__manta_1.6.0.sif'
 
+melt:
+  container: "{{APPTAINER_CACHE}}/MELT_v2.2.2.sif"
+  bed: "{{REFERENCE_DATA}}/poirot/melt/Hg38.genes.bed"
+  extra: "-r 150 "
+  mei: "{{REFERENCE_DATA}}/poirot/melt/mei_list.txt"
+
 mosdepth:
   by: '500'
   container: '{{APPTAINER_CACHE}}/hydragenetics__mosdepth_0.3.2.sif'
@@ -278,7 +284,7 @@ pbrun_deepvariant:
 
 pbrun_fq2bam:
   container: '{{APPTAINER_CACHE}}/nvcr.io__nvidia__clara__clara-parabricks_4.3.0-1.sif'
-  extra: '--gpusort --gpuwrite --num-cpu-threads-per-stage 16 '
+  extra: '--gpusort --gpuwrite --num-cpu-threads-per-stage 16 --fix-mate '
   tmp_dir: "/tmp"
 
 peddy:
