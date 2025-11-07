@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.14.0](https://github.com/clinical-genomics-uppsala/poirot_config/compare/v0.13.0...v0.14.0) (2025-11-07)
+
+
+### Features
+
+* add tag version env variable to sankemake wrapper prefix ([1a9101a](https://github.com/clinical-genomics-uppsala/poirot_config/commit/1a9101a87d1f584e36df2fcda73fbd7bf0c96155))
+* separate out the melt and vep references ([8178e70](https://github.com/clinical-genomics-uppsala/poirot_config/commit/8178e7016a8a5d013be35c29f2e771f4eca3fa98))
+
+
+### Bug Fixes
+
+* fix gene panel md5sums and add validation workflow ([72206f9](https://github.com/clinical-genomics-uppsala/poirot_config/commit/72206f969e65f1e3153e26a353b8cca4b5cff033))
+
 ## [0.13.0](https://github.com/clinical-genomics-uppsala/poirot_config/compare/v0.12.1...v0.13.0) (2025-11-06)
 
 
