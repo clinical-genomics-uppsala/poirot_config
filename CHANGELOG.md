@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.14.1](https://github.com/clinical-genomics-uppsala/poirot_config/compare/v0.14.0...v0.14.1) (2025-11-07)
+
+
+### Bug Fixes
+
+* change env variable to work with poirot build script ([fd5226c](https://github.com/clinical-genomics-uppsala/poirot_config/commit/fd5226cadf595e0ff9b397215bade377e66841f0))
+
 ## [0.14.0](https://github.com/clinical-genomics-uppsala/poirot_config/compare/v0.13.0...v0.14.0) (2025-11-07)
 
 
