@@ -1,0 +1,34 @@
+name: Validate gene panels
+
+on:
+  push:
+    branches:
+     - develop
+     - main
+  pull_request:
+    branches:
+     - develop
+     - main
+  workflow_dispatch:
+
+jobs:
+  validate-gene-panels:
+    name: Run a validation of the md5sums of the gene panels
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python 3.9
+        uses: actions/setup-python@v3
+        with:
+          python-version: 3.9
+      - name: Install requirements.txt
+        run: |
+          pip install -r requirements.txt
+      - name: validate gene panels
+        working-directory: ./
+        run: |
+          sed 's|poirot_config/||g' config/references/gene_panels.hg38.yaml > gene_panel.test.yaml && hydra-genetics --debug references download  -v gene_panel.test.yaml
+      - name: validate str panels
+        working-directory: ./
+        run: |
+          sed 's|poirot_config/||g' config/references/str_panels.hg38.yaml > str_panel.test.yaml && hydra-genetics --debug references download  -v str_panel.test.yaml
