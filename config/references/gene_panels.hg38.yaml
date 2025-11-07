@@ -1,7 +1,7 @@
 ---
   reference:
     genepanels:
-      checksum:  
+      checksum: f6ddb5cf61538abdbceeb056001b070c
       path: poirot/config/gene_panels/genepanels_WGS.list
       type: file
       url: file:poirot_config/config/gene_panels/genepanels_WGS.list
@@ -147,7 +147,7 @@
       url: file:poirot_config/config/gene_panels/Hypoparatyreoidism_v2.list
     IF_v1:
       path: poirot/config/gene_panels/IF_v1.list
-      checksum: 81bdbacf83b53430309d69d8ccd44ed5
+      checksum: a84ff3ea5a86ed212398ce8235c3f591
       type: file
       url: file:poirot_config/config/gene_panels/IF_v1.list
     Iktyos_v2:
@@ -202,7 +202,7 @@
       url: file:poirot_config/config/gene_panels/Njurcancer.list
     Njursjukdomar_v2:
       path: poirot/config/gene_panels/Njursjukdomar_v2.list
-      checksum: fcd16139be51a12c60132f03a4a20cc9
+      checksum: dc29d6eb4deacb286172bb55c6523a2b
       type: file
       url: file:poirot_config/config/gene_panels/Njursjukdomar_v2.list
     OI_och_benskorhet:
@@ -220,11 +220,6 @@
       checksum: 3efaa8f0fc7ed03ea8106ce9b494068c
       type: file
       url: file:poirot_config/config/gene_panels/Optikus_atrofi.list
-    PCD:
-      path: poirot/config/gene_panels/PCD.list
-      checksum: 18c4a440496f392c1a445fac290c80e3
-      type: file
-      url: file:poirot_config/config/gene_panels/PCD.list
     Pachyonychia_congenita:
       path: poirot/config/gene_panels/Pachyonychia_congenita.list
       checksum: 4c049ba63a0d4ac590909dbf2fe46715
@@ -232,7 +227,7 @@
       url: file:poirot_config/config/gene_panels/Pachyonychia_congenita.list
     Pancreatit_v1:
       path: poirot/config/gene_panels/Pancreatit_v1.list
-      checksum: f39805286c48bb0e6efd31919dfbd6f8
+      checksum: 2f2e1737c5b5c3c0cb0178e19b499f42
       type: file
       url: file:poirot_config/config/gene_panels/Pancreatit_v1.list
     Paragangliom_feokromocytom_v2:
@@ -242,7 +237,7 @@
       url: file:poirot_config/config/gene_panels/Paragangliom_feokromocytom_v2.list
     PCD_v2:
       path: poirot/config/gene_panels/PCD_v2.list
-      checksum: a13b3a3657dc04f35d5a5f26d32ce21d
+      checksum: b51aa61280720bd7d08e863525bf66bc
       type: file
       url: file:poirot_config/config/gene_panels/PCD_v2.list
     Periodisk_feber_v2:
@@ -252,7 +247,7 @@
       url: file:poirot_config/config/gene_panels/Periodisk_feber_v2.list
     Periodisk_paralys_v2:
       path: poirot/config/gene_panels/Periodisk_paralys_v2.list
-      checksum: 6a0af95b9e31d7dbbc2bf14ee4124a5e
+      checksum: e9bb67a3ae386531ecd9f15d221d5a9b
       type: file
       url: file:poirot_config/config/gene_panels/Periodisk_paralys_v2.list
     PPK_och_erytrodermi:
@@ -261,10 +256,10 @@
       type: file
       url: file:poirot_config/config/gene_panels/PPK_och_erytrodermi.list
     Primar_hyperaldosteronism_v1:
-      path: poirot/config/gene_panels/ Primar_hyperaldosteronism_v1.list
+      path: poirot/config/gene_panels/Primar_hyperaldosteronism_v1.list
       checksum: 3240572128f2c0b7320357e06693abc6
       type: file
-      url: file:poirot_config/config/gene_panels/ Primar_hyperaldosteronism_v1.list
+      url: file:poirot_config/config/gene_panels/Primar_hyperaldosteronism_v1.list
     Rasopatier:
       path: poirot/config/gene_panels/Rasopatier.list
       checksum: 94f6141811627009253a138d67bb121b
