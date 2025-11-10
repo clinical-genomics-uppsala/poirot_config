@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.15.0](https://github.com/clinical-genomics-uppsala/poirot_config/compare/v0.14.1...v0.15.0) (2025-11-10)
+
+
+### Features
+
+* add separate reference yaml for coverage bed ([89853d6](https://github.com/clinical-genomics-uppsala/poirot_config/commit/89853d689d5a3c6776da9a4a95930e042c941790))
+
 ## [0.14.1](https://github.com/clinical-genomics-uppsala/poirot_config/compare/v0.14.0...v0.14.1) (2025-11-07)
 
 
