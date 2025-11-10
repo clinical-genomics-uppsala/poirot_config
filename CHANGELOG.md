@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.15.1](https://github.com/clinical-genomics-uppsala/poirot_config/compare/v0.15.0...v0.15.1) (2025-11-10)
+
+
+### Bug Fixes
+
+* Update checksums and file paths in references.yaml ([88d6033](https://github.com/clinical-genomics-uppsala/poirot_config/commit/88d603311d264cf76da07e27d764af00fb79a779))
+
 ## [0.15.0](https://github.com/clinical-genomics-uppsala/poirot_config/compare/v0.14.1...v0.15.0) (2025-11-10)
 
 
