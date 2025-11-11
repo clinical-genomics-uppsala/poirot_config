@@ -280,12 +280,10 @@ pbrun_deepvariant:
   container: '{{APPTAINER_CACHE}}/nvcr.io__nvidia__clara__clara-parabricks_4.3.0-1.sif'
   extra: '--num-cpu-threads-per-stream 8  --num-streams-per-gpu 4 --disable-use-window-selector-model
     --gvcf '
-  tmp_dir: "/tmp"
 
 pbrun_fq2bam:
   container: '{{APPTAINER_CACHE}}/nvcr.io__nvidia__clara__clara-parabricks_4.3.0-1.sif'
-  extra: '--gpusort --gpuwrite --num-cpu-threads-per-stage 16 --fix-mate '
-  tmp_dir: "/tmp"
+  extra: '--gpusort --gpuwrite --num-cpu-threads-per-stage 8 --fix-mate '
 
 peddy:
   config: config/peddy_mqc.yaml
