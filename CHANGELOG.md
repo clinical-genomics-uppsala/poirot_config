@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.15.3](https://github.com/clinical-genomics-uppsala/poirot_config/compare/v0.15.2...v0.15.3) (2025-11-13)
+
+
+### Bug Fixes
+
+* set the mode scratch directory on Miarka ([b6e9088](https://github.com/clinical-genomics-uppsala/poirot_config/commit/b6e908827881111a6dcc10cd86b9b3eb547dd528))
+* Update file paths and checksums for exome interval_list ([0742c2d](https://github.com/clinical-genomics-uppsala/poirot_config/commit/0742c2d65fcd42f15c10998ae65c8b9651943331))
+
 ## [0.15.2](https://github.com/clinical-genomics-uppsala/poirot_config/compare/v0.15.1...v0.15.2) (2025-11-10)
 
 
