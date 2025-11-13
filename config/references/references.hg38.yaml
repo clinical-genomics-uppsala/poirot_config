@@ -20,12 +20,12 @@
       checksum: f8a920a0983b7fe9998be30d5ee18810
       path: poirot/hg38_exome_comp_spikein_v2.0.2_targets_sorted.re_annotated.sorted.bed
       type: file
-      url: file:/data/ref_data/wp3/hastings/hg38_exome_comp_spikein_v2.0.2_targets_sorted.re_annotated.sorted.bed
+      url: file:/beegfs-storage/data/ref_genomes/GRCh38/GRCmasked/hg38_exome_comp_spikein_v2.0.2_targets_sorted.re_annotated.sorted.bed
     exome_intervals:
-      checksum: bd61ce7c4d8a7ed0fc528672f86943a8
+      checksum: eb7560e7955cbb7ed4aa33a5b50a36d6
       path: poirot/hg38_exome_comp_spikein_v2.0.2_targets_sorted.re_annotated.sorted.interval_list
       type: file
-      url: file:/data/ref_data/wp3/hastings/hg38_exome_comp_spikein_v2.0.2_targets_sorted.re_annotated.sorted.interval_list
+      url: file:/beegfs-storage/data/ref_genomes/GRCh38/GRCmasked/hg38_exome_comp_spikein_v2.0.2_targets_sorted.re_annotated.sorted.interval_list
     sites:
       checksum: 14cc588a271951ac1806f9be895fb51f
       path: poirot/Homo_sapiens_assembly38.known_indels.vcf.gz
