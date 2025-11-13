@@ -41,14 +41,14 @@ reference:
   fasta: '{{REFERENCE_DATA}}/poirot/GCA_000001405.15_GRCh38_no_alt_analysis_set_GRCmasked.fasta'
   genepanels: '{{REFERENCE_DATA}}/poirot/config/gene_panels/genepanels_WGS.list'
   merge_contigs:
-  - .*_random
-  - chrUn_.*
-  - chrEBV
+    - .*_random
+    - chrUn_.*
+    - chrEBV
   sites: '{{REFERENCE_DATA}}/poirot/Homo_sapiens_assembly38.known_indels.vcf.gz'
   str_panels:
-  - ataxi.list
-  - dystoni.list
-  - spastisk_paraplegi.list
+    - ataxi.list
+    - dystoni.list
+    - spastisk_paraplegi.list
   str_panels_dir: '{{REFERENCE_DATA}}/poirot/config/str_panels'
   wgs_intervals: '{{REFERENCE_DATA}}/poirot/homo_sapiens.hg38.wgs.interval_list'
 
@@ -280,12 +280,12 @@ pbrun_deepvariant:
   container: '{{APPTAINER_CACHE}}/nvcr.io__nvidia__clara__clara-parabricks_4.3.0-1.sif'
   extra: '--num-cpu-threads-per-stream 8  --num-streams-per-gpu 4 --disable-use-window-selector-model
     --gvcf '
-  tmp_dir: "/tmp"
+  tmp_dir: $TMPDIR
 
 pbrun_fq2bam:
   container: '{{APPTAINER_CACHE}}/nvcr.io__nvidia__clara__clara-parabricks_4.3.0-1.sif'
-  extra: '--gpusort --gpuwrite --num-cpu-threads-per-stage 16 --fix-mate '
-  tmp_dir: "/tmp"
+  extra: '--gpusort --gpuwrite --num-cpu-threads-per-stage 10 --fix-mate '
+  tmp_dir: $TMPDIR
 
 peddy:
   config: config/peddy_mqc.yaml
