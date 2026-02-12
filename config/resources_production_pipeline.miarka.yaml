@@ -46,8 +46,8 @@ expansionhunter:
   mem_per_cpu: 6144
 
 fastp_pe:
-  threads: 8
-  mem_mb: 49152
+  threads: 16
+  mem_mb: 98304
   mem_per_cpu: 6144
 
 fastqc:
