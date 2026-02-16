@@ -240,14 +240,9 @@
       checksum: 4c049ba63a0d4ac590909dbf2fe46715
       type: file
       url: file:poirot_config/config/gene_panels/Pachyonychia_congenita.list
-    Pancreatit_v1:
-      path: poirot/config/gene_panels/Pancreatit_v1.list
-      checksum: 2f2e1737c5b5c3c0cb0178e19b499f42
-      type: file
-      url: file:poirot_config/config/gene_panels/Pancreatit_v1.list
     Pankreatit_v1:
       path: poirot/config/gene_panels/Pankreatit_v1.list
-      checksum: f1b1a6dd7e542a4a5f4edebdb90626d6
+      checksum: 2f2e1737c5b5c3c0cb0178e19b499f42
       type: file
       url: file:poirot_config/config/gene_panels/Pankreatit_v1.list
     Paragangliom_feokromocytom_v2:
