@@ -10,6 +10,11 @@
       checksum: a96c0cdf2336449c4eddcac5e23ab78a
       type: file
       url: file:poirot_config/config/gene_panels/Amyloidos.list
+    Angioodem_v1:
+      path: poirot/config/gene_panels/Angioodem_v1.list
+      checksum: 56148127c908f5c7d12b50790680288e
+      type: file
+      url: file:poirot_config/config/gene_panels/Angioodem_v1.list
     Arytmier:
       path: poirot/config/gene_panels/Arytmier.list
       checksum: fc4781e323c2ca32cd5279c3913169ce
@@ -55,6 +60,11 @@
       checksum: d11a4edabfe086ea7ba854e3314dca82
       type: file
       url: file:poirot_config/config/gene_panels/ChiCaP.list
+    Ciliopati_v1:
+      path: poirot/config/gene_panels/Ciliopati_v1.list
+      checksum: 50d8cfe0d0d3a700e6582b333dbfaa52
+      type: file
+      url: file:poirot_config/config/gene_panels/Ciliopati_v1.list
     Cornealdystrofi:
       path: poirot/config/gene_panels/Cornealdystrofi.list
       checksum: 6a55e5666f31dc3292c4b96a221680a4
@@ -185,6 +195,11 @@
       checksum: eea351479f7c2ad321211c64031318d2
       type: file
       url: file:poirot_config/config/gene_panels/MODY_lipodystrophy.list 
+    Neurodegenerativa_v1:
+      path: poirot/config/gene_panels/Neurodegenerativa_v1.list
+      checksum: 447be3edb03b98631b7a216495e1d00b
+      type: file
+      url: file:poirot_config/config/gene_panels/Neurodegenerativa_v1.list 
     Neuromuskular:
       path: poirot/config/gene_panels/Neuromuskular_v2.list
       checksum: 9e06fa9da18ce37c802292ace038b6ee
@@ -230,6 +245,11 @@
       checksum: 2f2e1737c5b5c3c0cb0178e19b499f42
       type: file
       url: file:poirot_config/config/gene_panels/Pancreatit_v1.list
+    Pankreatit_v1:
+      path: poirot/config/gene_panels/Pankreatit_v1.list
+      checksum: f1b1a6dd7e542a4a5f4edebdb90626d6
+      type: file
+      url: file:poirot_config/config/gene_panels/Pankreatit_v1.list
     Paragangliom_feokromocytom_v2:
       path: poirot/config/gene_panels/Paragangliom_feokromocytom_v2.list
       checksum: c62d6bf4cffbe80f6a1d1c597a0032e4
@@ -250,6 +270,11 @@
       checksum: e9bb67a3ae386531ecd9f15d221d5a9b
       type: file
       url: file:poirot_config/config/gene_panels/Periodisk_paralys_v2.list
+    Polycystisk_njursjukdom_v2:
+      path: poirot/config/gene_panels/Polycystisk_njursjukdom_v2.list
+      checksum: d9d791a65629fee8851f2f4f75639989
+      type: file
+      url: file:poirot_config/config/gene_panels/Polycystisk_njursjukdom_v2.list
     PPK_och_erytrodermi:
       path: poirot/config/gene_panels/PPK_och_erytrodermi.list
       checksum: 388b525609bb6f1313506aad7e3bb6a0
@@ -290,6 +315,11 @@
       checksum: 9f574a0896d2190f4382749091f5fe75
       type: file
       url: file:poirot_config/config/gene_panels/Trombocytopenier.list
+    Tubulopati_v1:
+      path: poirot/config/gene_panels/Tubulopati_v1.list
+      checksum: 3a44b9911dbec8e2a8176bd2e93f1c69
+      type: file
+      url: file:poirot_config/config/gene_panels/Tubulopati_v1.list
     Tyroideahormonresistens_v2:
       path: poirot/config/gene_panels/Tyroideahormonresistens_v2.list
       checksum: e878e62de91bee6b831bdab7001c85a1
