@@ -58,7 +58,7 @@ filter_par_dups:
   bed: "config/cnv_filter_bed/chrX_PAR_HG38.bed"
 
 gatk_lift_over_vcf:
-  shift_back_chain: '/beegfs-storage/data/ref_data/gatk_mito/gatk_mito/ShiftBack.chain'
+  shift_back_chain: '/beegfs-storage/data/ref_data/gatk_mito/ShiftBack.chain'
 
 gatk_mutect2:
   interval:
