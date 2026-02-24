@@ -59,6 +59,9 @@ echtvar_anno:
     - "{{REFERENCE_DATA}}/poirot/gnomad_snvs.zip"
     - "{{REFERENCE_DATA}}/poirot/CoLoRSdb.GRCh38.v1.2.0.deepvariant.glnexus.vcf.gz.zip"
 
+filter_par_dups:
+  bed: "config/cnv_filter_bed/chrX_PAR_HG38.bed"
+
 gatk_mutect2:
   interval:
     mt: '{{REFERENCE_DATA}}/poirot/gatk_mito/non_control_region.chrM.interval_list'

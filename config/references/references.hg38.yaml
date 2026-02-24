@@ -52,6 +52,11 @@
       type: file
       url: file:/beegfs-storage/data/ref_genomes/GRCh38/GRCmasked/GRCh38_chromosomes.bed.gz.tbi
   
+  cnv_filter_bed:
+    checksum: c14e4639fb57a9e191ff8b57c9b313d3
+    path: poirot/config/cnv_filter_bed/chrX_PAR_HG38.bed
+    type: file
+    url: file:poirot/config/cnv_filter_bed/chrX_PAR_HG38.bed
 
   colorsdb_snv_echtvar:
     checksum: 0e4b4ffcf3479604497a3eda4adf577e
