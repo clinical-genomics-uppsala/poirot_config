@@ -52,18 +52,35 @@
       type: file
       url: file:/beegfs-storage/data/ref_genomes/GRCh38/GRCmasked/GRCh38_chromosomes.bed.gz.tbi
   
-  gnomad_sv_vcf:
-    checksum: 16cac79cd6846346396d54ad3c14ef0f
-    path: poirot/gnomad.v4.0.sv.vcf.gz
+  cnv_filter_bed:
+    checksum: c14e4639fb57a9e191ff8b57c9b313d3
+    path: poirot/config/cnv_filter_bed/chrX_PAR_HG38.bed
     type: file
-    url: file:/data/ref_data/gnomad/gnomad_sv/gnomad.v4.0.sv.vcf.gz
+    url: file:poirot/config/cnv_filter_bed/chrX_PAR_HG38.bed
+
+  colorsdb_snv_echtvar:
+    checksum: 0e4b4ffcf3479604497a3eda4adf577e
+    path: poirot/CoLoRSdb.GRCh38.v1.2.0.deepvariant.glnexus.vcf.gz.zip
+    type: file
+    url: file:/data/ref_data/wp3/nallo_refs/0.3.0/CoLoRSdb.GRCh38.v1.2.0.deepvariant.glnexus.vcf.gz.zip
+  
+  gnomad_snv_echtvar:
+    checksum: 329566e66e485e16aea90dff83973db4
+    path: poirot/gnomad_snvs.zip
+    type: file
+    url: file:/data/ref_data/wp3/nallo_refs/0.3.0/gnomad_snvs.zip
+
+  gnomad_sv_vcf:
+    checksum: 944e9684c415104bcef254a92a72f246
+    path: poirot/gnomad.v4.1.sv.sites.no_cnv.PASS.vcf.gz
+    type: file
+    url: file:/beegfs-storage/data/ref_data/wp3/gnomad/gnomad.v4.1.sv.sites.no_cnv.PASS.vcf.gz
   
   gnomad_sv_vcf_index:
-    checksum: b1d41e6310df0597935bd9057b6de740
-    path: poirot/gnomad.v4.0.sv.vcf.gz.tbi
+    checksum: d7c447330d89536b3bf8aafe45deb7eb
+    path: poirot/gnomad.v4.1.sv.sites.no_cnv.PASS.vcf.gz.tbi
     type: file
-    url: file:/data/ref_data/gnomad/gnomad_sv/gnomad.v4.0.sv.vcf.gz.tbi
-
+    url: file:/beegfs-storage/data/ref_data/wp3/gnomad/gnomad.v4.1.sv.sites.no_cnv.PASS.vcf.gz.tbi
     
   peddy_sites:
     checksum: 736f74618ab09407ffa102bbb6475015
@@ -73,15 +90,15 @@
 
   svdb_query:
     cnvpytor:
-      checksum: f011fcf8b477585a4bc29fe8f74ae8c4 
-      path: poirot/svdb_query/cnvpytor_wgs_hg38_1.0.vcf.gz
+      checksum: 1ede15945a52fd6fff8a8a55c35fccfd
+      path: poirot/svdb_query/cnvpytor_wgs_hg38_novaseqX_v2.1.sorted.vcf.gz
       type: file
-      url: file:/beegfs-storage/data/ref_data/wp3/svdb/svdb_create/cnvpytor_wgs_hg38_1.0.vcf.gz
+      url: file:/beegfs-storage/data/ref_data/wp3/svdb/svdb_create_novaseqx/cnvpytor_wgs_hg38_novaseqX_v2.1.sorted.vcf.gz
     manta:
-      checksum: f9a964a41ba7545a28b2fe5c000f8310 
-      path: poirot/svdb_query/manta_wgs_hg38_1.0.vcf.gz
+      checksum: c32d360b7b539bfc2a4fe5e47f0c9a19
+      path: poirot/svdb_query/manta_wgs_hg38_novaseqX_v2.0.sorted.vcf.gz
       type: file
-      url: file:/beegfs-storage/data/ref_data/wp3/svdb/svdb_create/manta_wgs_hg38_1.0.vcf.gz
+      url: file:/beegfs-storage/data/ref_data/wp3/svdb/svdb_create_novaseqx/manta_wgs_hg38_novaseqX_v2.0.sorted.vcf.gz
   
   verifybamid:
     mu:
