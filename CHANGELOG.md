@@ -1,5 +1,24 @@
 # Changelog
 
+## [0.16.0](https://github.com/clinical-genomics-uppsala/poirot_config/compare/v0.15.3...v0.16.0) (2026-03-16)
+
+
+### Features
+
+* add a bedfile for genes that should not be filtered by population AF ([3a9735f](https://github.com/clinical-genomics-uppsala/poirot_config/commit/3a9735fa3d25e7916d871262e74ba46063bb5207))
+* add chrX PAR bed for filtering CNVs ([fcc2c58](https://github.com/clinical-genomics-uppsala/poirot_config/commit/fcc2c58421e73f4d115f43ab1600e355d80a4198))
+* add new gene panels ([80a7d5d](https://github.com/clinical-genomics-uppsala/poirot_config/commit/80a7d5dc1f791bb69b5a4251ffe23a7a442524e1))
+* add the checksums and paths for the updated variant dbs ([34edea4](https://github.com/clinical-genomics-uppsala/poirot_config/commit/34edea42354eb545d0d8835d23d48039408fd5ca))
+* update outdated gene names according to HGNC ([05fedfd](https://github.com/clinical-genomics-uppsala/poirot_config/commit/05fedfda04b240479628e7d1ba050fb4de4297af))
+* update profiles to use two pipeline config and a custom cluster config ([2e0708e](https://github.com/clinical-genomics-uppsala/poirot_config/commit/2e0708e3d52dac722205e14db006cd10494fac75))
+* update with checksums for new gene lists ([b128f92](https://github.com/clinical-genomics-uppsala/poirot_config/commit/b128f92137e424b90ea91ba2ba5dea8ad5cf2a18))
+
+
+### Bug Fixes
+
+* remove duplicate; update naming ([aef9604](https://github.com/clinical-genomics-uppsala/poirot_config/commit/aef96048bd4583e3003ae5bf1f01025fdd46ac2f))
+* update gene panel name ([81c44ee](https://github.com/clinical-genomics-uppsala/poirot_config/commit/81c44ee88687e0a10e8dafd489bf3766f9337cf1))
+
 ## [0.15.3](https://github.com/clinical-genomics-uppsala/poirot_config/compare/v0.15.2...v0.15.3) (2025-11-13)
 
 
