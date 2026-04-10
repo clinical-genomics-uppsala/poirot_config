@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.17.0](https://github.com/clinical-genomics-uppsala/poirot_config/compare/v0.16.0...v0.17.0) (2026-04-10)
+
+
+### Features
+
+* Add wrapper-prefix to production CPU config ([f103a37](https://github.com/clinical-genomics-uppsala/poirot_config/commit/f103a37538d676fd4ae7c500140b45ae51c36264))
+* Add wrapper-prefix to production GPU config ([096338b](https://github.com/clinical-genomics-uppsala/poirot_config/commit/096338bfb0b2ce6634700bc141e7a8c56f677b5f))
+
 ## [0.16.0](https://github.com/clinical-genomics-uppsala/poirot_config/compare/v0.15.3...v0.16.0) (2026-03-16)
 
 
