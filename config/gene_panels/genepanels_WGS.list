@@ -2,7 +2,7 @@ Amyloidos
 Angioodem_v1
 Arytmier
 Ataxi_v5
-Bindvav
+Bindvav_v3
 Blueprint_pseudogenes
 Bred_NMD_v1
 Bred_skelettdysplasi
@@ -23,6 +23,7 @@ Hereditar_hypofystumorpanel
 HHT_v1
 Horsel
 HSP_v2
+Hyperinsulinism_hypoglycemi_v1
 Hyperlipidemi_v1
 Hyperparatyreoidism_v2
 Hypofystumor_v1
@@ -33,8 +34,10 @@ Iktyos_v2
 Immun
 Intestinal_obstruktion_v1
 Kardio
+Kolestas_v1
 Kortvuxenhet_v1
-Kraniosynostos
+Kraniosynostos_v4
+Mikrocefali_v1
 MODY_lipodystrophy
 Neurodegenerativa_v1
 Neuromuskular_v2
@@ -46,6 +49,7 @@ OI_och_benskorhet
 Okular_albinism
 Optikus_atrofi
 Pachyonychia_congenita
+PAH_v1
 Pankreatit_v1
 Paragangliom_feokromocytom_v2
 PCD_v2
@@ -59,6 +63,7 @@ Retinal_degeneration
 Schwannomatos_och_menigiom
 Skelettdysplasi_v1
 Sotos
+Spermiedefekter_v1
 Trombocytopenier
 Tubulopati_v1
 Tyroideahormonresistens_v2
