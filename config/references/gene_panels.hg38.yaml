@@ -25,7 +25,7 @@
       checksum: f7d106d9fe174d58c3f7fbec35fcfe4b
       type: file
       url: file:poirot_config/config/gene_panels/Ataxi_v5.list
-    Bindvav:
+    Bindvav_v3:
       path: poirot/config/gene_panels/Bindvav_v3.list
       checksum: f8f4aed0cb3d9702502be5278e29d47c
       type: file
