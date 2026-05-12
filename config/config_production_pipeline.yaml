@@ -22,6 +22,10 @@ reference:
     - "chrUn_.*"
     - "chrEBV"
 
+
+bcftools_annotate:
+  annotation_db: "config/skipAF/genes_hgnc_skipAF_300326.bed"
+
 bwa_mem:
   amb: "/beegfs-storage/data/ref_genomes/GRCh38/GRCmasked/GCA_000001405.15_GRCh38_no_alt_analysis_set_GRCmasked.fasta.amb"
   ann: "/beegfs-storage/data/ref_genomes/GRCh38/GRCmasked/GCA_000001405.15_GRCh38_no_alt_analysis_set_GRCmasked.fasta.ann"
