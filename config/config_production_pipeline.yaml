@@ -3,7 +3,7 @@
 resources: "config/resources_production_pipeline.yaml"
 
 reference:
-  coverage_bed: "/beegfs-storage/data/ref_data/refseq/GCF_000001405.40-RS_2024_08_coverage_20260216.bed" 
+  coverage_bed: "/beegfs-storage/data/ref_data/refseq/GCF_000001405.40-RS_2024_08_coverage_20260508.bed" 
   design_bed: "/beegfs-storage/data/ref_genomes/GRCh38/GRCmasked/homo_sapiens.hg38.wgs.bed"
   exome_bed: "/beegfs-storage/data/ref_genomes/GRCh38/GRCmasked/Twist_Comprehensive_Exome_Covered_Targets_hg38.bed"
   exome_intervals: "/beegfs-storage/data/ref_genomes/GRCh38/GRCmasked/Twist_Comprehensive_Exome_Covered_Targets_hg38.interval_list"
@@ -21,6 +21,10 @@ reference:
     - ".*_random"
     - "chrUn_.*"
     - "chrEBV"
+
+
+bcftools_annotate:
+  annotation_db: "config/skipAF/genes_hgnc_skipAF_300326.bed"
 
 bwa_mem:
   amb: "/beegfs-storage/data/ref_genomes/GRCh38/GRCmasked/GCA_000001405.15_GRCh38_no_alt_analysis_set_GRCmasked.fasta.amb"
