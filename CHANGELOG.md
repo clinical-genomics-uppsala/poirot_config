@@ -1,5 +1,25 @@
 # Changelog
 
+## [0.18.0](https://github.com/clinical-genomics-uppsala/poirot_config/compare/v0.17.0...v0.18.0) (2026-05-12)
+
+
+### Features
+
+* add new panels ([cba2e8a](https://github.com/clinical-genomics-uppsala/poirot_config/commit/cba2e8a6f8189306a54e13af52b652beba0e4f35))
+* add RILPL1 and LOC642361 to str catalog ([015cd69](https://github.com/clinical-genomics-uppsala/poirot_config/commit/015cd692f1cea95ede16d46e7c7e391f26b92bf6))
+* add somalier sites ti skipAF bed file ([4e2ad79](https://github.com/clinical-genomics-uppsala/poirot_config/commit/4e2ad793263dc250fef4d30625d89ed2fe89d1b9))
+* update panel versions ([44e1aa0](https://github.com/clinical-genomics-uppsala/poirot_config/commit/44e1aa02d261e13418113b9e60853856ab524f6f))
+
+
+### Bug Fixes
+
+* fix mismatched checksums ([f7fc54e](https://github.com/clinical-genomics-uppsala/poirot_config/commit/f7fc54e79a0ae9071524c9ba19099fc003a36fcb))
+* update checksum ([905985c](https://github.com/clinical-genomics-uppsala/poirot_config/commit/905985c12b51ade6b2e34443fcd045632e20d657))
+* update gene panel list ([8d98504](https://github.com/clinical-genomics-uppsala/poirot_config/commit/8d985041609e1b4be382c987997acc30e60a0280))
+* update missing version name ([23c9f6a](https://github.com/clinical-genomics-uppsala/poirot_config/commit/23c9f6a094755b0e8205a7ce588369feec1469f9))
+* update reference bed files ([213cc20](https://github.com/clinical-genomics-uppsala/poirot_config/commit/213cc207d2cad5beb580052443e20c25ab7a06cb))
+* Update validation steps to include download and validate command ([299caa9](https://github.com/clinical-genomics-uppsala/poirot_config/commit/299caa9850d25e09e3cdf3dbd1487d717fa05d9e))
+
 ## [0.17.0](https://github.com/clinical-genomics-uppsala/poirot_config/compare/v0.16.0...v0.17.0) (2026-04-10)
 
 
