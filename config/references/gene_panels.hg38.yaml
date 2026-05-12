@@ -1,7 +1,7 @@
 ---
   reference:
     genepanels:
-      checksum: f6ddb5cf61538abdbceeb056001b070c
+      checksum: 9a5c82b3fbaa2f34a0fb5abe1fde8349
       path: poirot/config/gene_panels/genepanels_WGS.list
       type: file
       url: file:poirot_config/config/gene_panels/genepanels_WGS.list
@@ -20,19 +20,19 @@
       checksum: fc4781e323c2ca32cd5279c3913169ce
       type: file
       url: file:poirot_config/config/gene_panels/Arytmier.list
-    Ataxi:
+    Ataxi_v5:
       path: poirot/config/gene_panels/Ataxi_v5.list
-      checksum: f7d106d9fe174d58c3f7fbec35fcfe4b
+      checksum: 8d2938b868bee5e8de6f0878224f10f1
       type: file
       url: file:poirot_config/config/gene_panels/Ataxi_v5.list
-    Bindvav:
-      path: poirot/config/gene_panels/Bindvav.list
-      checksum: d36801159fe163411831938bb697191a
+    Bindvav_v3:
+      path: poirot/config/gene_panels/Bindvav_v3.list
+      checksum: f8f4aed0cb3d9702502be5278e29d47c
       type: file
-      url: file:poirot_config/config/gene_panels/Bindvav.list
+      url: file:poirot_config/config/gene_panels/Bindvav_v3.list
     Blueprint_pseudogenes:
       path: poirot/config/gene_panels/Blueprint_pseudogenes.list
-      checksum: 85f2cd5a38a458596d732b06fcfe7cd6
+      checksum: eff138ee4eb521806c0b7d5a995b43e7
       type: file
       url: file:poirot_config/config/gene_panels/Blueprint_pseudogenes.list
     Bred_NMD_v1:
@@ -122,7 +122,7 @@
       url: file:poirot_config/config/gene_panels/HHT_v1.list
     Horsel:
       path: poirot/config/gene_panels/Horsel.list
-      checksum: 9f86dfb6fcbe752052957a769f60690b
+      checksum: a2bf562b4dff2a27a1a477ea4a634116
       type: file
       url: file:poirot_config/config/gene_panels/Horsel.list
     HSP_v2:
@@ -130,6 +130,11 @@
       checksum: 981b84978187f82fdaa9190a8ed0eb12
       type: file
       url: file:poirot_config/config/gene_panels/HSP_v2.list
+    Hyperinsulinism_hypoglycemi_v1:
+      path: poirot/config/gene_panels/Hyperinsulinism_hypoglycemi_v1.list
+      checksum: 22f8568de8f965402fd90cf46b622268
+      type: file
+      url: file:poirot_config/config/gene_panels/Hyperinsulinism_hypoglycemi_v1.list
     Hyperlipidemi_v1:
       path: poirot/config/gene_panels/Hyperlipidemi_v1.list
       checksum: a952c3e9e3789958f01585984a5742d2
@@ -172,7 +177,7 @@
       url: file:poirot_config/config/gene_panels/Immun.list
     Intestinal_obstruktion_v1:
       path: poirot/config/gene_panels/Intestinal_obstruktion_v1.list
-      checksum: 2663ec41d32b5928933389a841c4fa82 
+      checksum: 154093986e973ceeb6e834905cf64904 
       type: file
       url: file:poirot_config/config/gene_panels/Intestinal_obstruktion_v1.list
     Kardio:
@@ -180,16 +185,26 @@
       checksum: 761fdf007fee2f2f4b45b37f8ae81a3e
       type: file
       url: file:poirot_config/config/gene_panels/Kardio.list
+    Kolestas_v1:
+      path: poirot/config/gene_panels/Kolestas_v1.list
+      checksum: 8ea784e8cc06cda537ed51564c1f2c34
+      type: file
+      url: file:poirot_config/config/gene_panels/Kolestas_v1.list
     Kortvuxenhet_v1:
       path: poirot/config/gene_panels/Kortvuxenhet_v1.list
       checksum: 29de984444c1475bdfa75a2836981266
       type: file
       url: file:poirot_config/config/gene_panels/Kortvuxenhet_v1.list
-    Kraniosynostos:
-      path: poirot/config/gene_panels/Kraniosynostos.list
-      checksum: 1aec2b03e5e73bd31cb9d3c63bfdea5d
+    Kraniosynostos_v4:
+      path: poirot/config/gene_panels/Kraniosynostos_v4.list
+      checksum: 73dabd24c0123c85149273540c939a38
       type: file
-      url: file:poirot_config/config/gene_panels/Kraniosynostos.list
+      url: file:poirot_config/config/gene_panels/Kraniosynostos_v4.list
+    Mikrocefali_v1:
+      path: poirot/config/gene_panels/Mikrocefali_v1.list
+      checksum: 85caa60aad07274a75149ce910d13788
+      type: file
+      url: file:poirot_config/config/gene_panels/Mikrocefali_v1.list
     MODY_lipodystrophy:
       path: poirot/config/gene_panels/MODY_lipodystrophy.list 
       checksum: eea351479f7c2ad321211c64031318d2
@@ -200,12 +215,12 @@
       checksum: 447be3edb03b98631b7a216495e1d00b
       type: file
       url: file:poirot_config/config/gene_panels/Neurodegenerativa_v1.list 
-    Neuromuskular:
+    Neuromuskular_v2:
       path: poirot/config/gene_panels/Neuromuskular_v2.list
       checksum: 9e06fa9da18ce37c802292ace038b6ee
       type: file
       url: file:poirot_config/config/gene_panels/Neuromuskular_v2.list
-    Neuropati:
+    Neuropati_v2:
       path: poirot/config/gene_panels/Neuropati_v2.list
       checksum: 81caf48af55689bc6553951a4bbd6263 
       type: file
@@ -225,6 +240,11 @@
       checksum: 282adab72f938e2aa45d35496f75b386
       type: file
       url: file:poirot_config/config/gene_panels/OI_och_benskorhet.list
+    Obesitas_v2:
+      path: poirot/config/gene_panels/Obesitas_v2.list
+      checksum: 5d7058bdf80dd7ffb4578ba360ffb178
+      type: file
+      url: file:poirot_config/config/gene_panels/Obesitas_v2.list
     Okular_albinism:
       path: poirot/config/gene_panels/Okular_albinism.list
       checksum: fc8dbc18916caf5fd1b9d63d46021ba9
@@ -240,6 +260,11 @@
       checksum: 4c049ba63a0d4ac590909dbf2fe46715
       type: file
       url: file:poirot_config/config/gene_panels/Pachyonychia_congenita.list
+    PAH_v1:
+      path: poirot/config/gene_panels/PAH_v1.list
+      checksum: 49eb6d723ba1e6990997c7374f7090fc
+      type: file
+      url: file:poirot_config/config/gene_panels/PAH_v1.list
     Pankreatit_v1:
       path: poirot/config/gene_panels/Pankreatit_v1.list
       checksum: 2f2e1737c5b5c3c0cb0178e19b499f42
@@ -305,6 +330,11 @@
       checksum: d4abc6e1e442ee911cb672f6d5aafec3
       type: file
       url: file:poirot_config/config/gene_panels/Sotos.list
+    Spermiedefekter_v1:
+      path: poirot/config/gene_panels/Spermiedefekter_v1.list
+      checksum: ef8a020039e9c3b72f7bddf074e14239
+      type: file
+      url: file:poirot_config/config/gene_panels/Spermiedefekter_v1.list
     Trombocytopenier:
       path: poirot/config/gene_panels/Trombocytopenier.list
       checksum: 9f574a0896d2190f4382749091f5fe75
