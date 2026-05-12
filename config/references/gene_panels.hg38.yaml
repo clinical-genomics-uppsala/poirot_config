@@ -20,9 +20,9 @@
       checksum: fc4781e323c2ca32cd5279c3913169ce
       type: file
       url: file:poirot_config/config/gene_panels/Arytmier.list
-    Ataxi:
+    Ataxi_v5:
       path: poirot/config/gene_panels/Ataxi_v5.list
-      checksum: f7d106d9fe174d58c3f7fbec35fcfe4b
+      checksum: 8d2938b868bee5e8de6f0878224f10f1
       type: file
       url: file:poirot_config/config/gene_panels/Ataxi_v5.list
     Bindvav_v3:
@@ -32,7 +32,7 @@
       url: file:poirot_config/config/gene_panels/Bindvav_v3.list
     Blueprint_pseudogenes:
       path: poirot/config/gene_panels/Blueprint_pseudogenes.list
-      checksum: 85f2cd5a38a458596d732b06fcfe7cd6
+      checksum: eff138ee4eb521806c0b7d5a995b43e7
       type: file
       url: file:poirot_config/config/gene_panels/Blueprint_pseudogenes.list
     Bred_NMD_v1:
@@ -122,7 +122,7 @@
       url: file:poirot_config/config/gene_panels/HHT_v1.list
     Horsel:
       path: poirot/config/gene_panels/Horsel.list
-      checksum: 9f86dfb6fcbe752052957a769f60690b
+      checksum: a2bf562b4dff2a27a1a477ea4a634116
       type: file
       url: file:poirot_config/config/gene_panels/Horsel.list
     HSP_v2:
@@ -177,7 +177,7 @@
       url: file:poirot_config/config/gene_panels/Immun.list
     Intestinal_obstruktion_v1:
       path: poirot/config/gene_panels/Intestinal_obstruktion_v1.list
-      checksum: 2663ec41d32b5928933389a841c4fa82 
+      checksum: 154093986e973ceeb6e834905cf64904 
       type: file
       url: file:poirot_config/config/gene_panels/Intestinal_obstruktion_v1.list
     Kardio:
@@ -215,12 +215,12 @@
       checksum: 447be3edb03b98631b7a216495e1d00b
       type: file
       url: file:poirot_config/config/gene_panels/Neurodegenerativa_v1.list 
-    Neuromuskular:
+    Neuromuskular_v2:
       path: poirot/config/gene_panels/Neuromuskular_v2.list
       checksum: 9e06fa9da18ce37c802292ace038b6ee
       type: file
       url: file:poirot_config/config/gene_panels/Neuromuskular_v2.list
-    Neuropati:
+    Neuropati_v2:
       path: poirot/config/gene_panels/Neuropati_v2.list
       checksum: 81caf48af55689bc6553951a4bbd6263 
       type: file
@@ -240,6 +240,11 @@
       checksum: 282adab72f938e2aa45d35496f75b386
       type: file
       url: file:poirot_config/config/gene_panels/OI_och_benskorhet.list
+    Obesitas_v2:
+      path: poirot/config/gene_panels/Obesitas_v2.list
+      checksum: 5d7058bdf80dd7ffb4578ba360ffb178
+      type: file
+      url: file:poirot_config/config/gene_panels/Obesitas_v2.list
     Okular_albinism:
       path: poirot/config/gene_panels/Okular_albinism.list
       checksum: fc8dbc18916caf5fd1b9d63d46021ba9
