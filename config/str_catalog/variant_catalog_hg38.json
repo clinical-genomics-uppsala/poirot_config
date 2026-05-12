@@ -1189,7 +1189,6 @@
         "NormalMax": 8,
         "PathologicMin": 10000
     },
-
     {
       "VariantType": "Repeat",
       "LocusId": "GLS",
@@ -1219,6 +1218,36 @@
       "Disease": "CANVAS",
       "NormalMax": 11,
       "PathologicMin": 12
+    },
+    {
+      "VariantType": "Repeat",
+      "LocusId": "RILPL1",
+      "HGNCId": 26814,
+      "InheritanceMode": "AD",
+      "DisplayRU": "CGG",
+      "SourceDisplay": "Yu et al (2022) AJHG 109(3):533-541",
+      "Source": "PubMed",
+      "SourceId": "35148830",
+      "LocusStructure": "(GGC)*",
+      "ReferenceRegion": "chr12:123533720-123533755",
+      "Disease": "OPDM4",
+      "NormalMax": 16,
+      "PathologicMin": 135
+    },
+    {
+      "LocusId": "LOC642361",
+      "ReferenceRegion": "chr10:79826377-79826403",
+      "LocusStructure": "(CCG)*",
+      "VariantType": "Repeat",
+      "HGNCId": 51204,
+      "InheritanceMode": "AD",
+      "DisplayRU": "CGG",
+      "SourceDisplay":"Ishiura et al (2019) Nature Genetics 51(8):1222-1232",
+      "Source": "PubMed",
+      "SourceId": "31332380",
+      "Disease": "OPML1",
+      "NormalMax": 16,
+      "PathologicMin": 17
     },
     {
       "VariantType": ["Repeat","Repeat"],
