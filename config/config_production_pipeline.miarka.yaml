@@ -25,6 +25,8 @@ reference:
   str_panels_dir: '{{REFERENCE_DATA}}/poirot/config/str_panels'
   wgs_intervals: '{{REFERENCE_DATA}}/poirot/homo_sapiens.hg38.wgs.interval_list'
 
+bcftools_annotate:
+  annotation_db: "config/skipAF/genes_hgnc_skipAF_300326.bed"
 
 bwa_mem:
   amb: '{{REFERENCE_DATA}}/poirot/GCA_000001405.15_GRCh38_no_alt_analysis_set_GRCmasked.fasta.amb'

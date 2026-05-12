@@ -1,0 +1,26 @@
+name: Validate STR catalog
+
+on:
+  pull_request:
+    branches:
+      - develop
+      - main
+    paths:
+      - 'config/str_catalog/**'
+      - 'scripts/validate_str_catalog.py'
+  workflow_dispatch:
+
+jobs:
+  validate-str-catalog:
+    name: Validate variant_catalog_hg38.json with stranger
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install stranger
+        run: pip install stranger==0.10.2
+      - name: Validate STR catalog
+        run: python3 scripts/validate_str_catalog.py
