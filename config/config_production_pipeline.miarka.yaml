@@ -98,8 +98,14 @@ stranger:
   catalog: '{{REFERENCE_DATA}}/poirot/config/str_catalog/variant_catalog_hg38.json'
 
 svdb_query:
-  db_string: '--db {{REFERENCE_DATA}}/poirot/svdb_query/manta_wgs_hg38_novaseqX_v2.0.sorted.vcf.gz,{{REFERENCE_DATA}}/poirot/svdb_query/cnvpytor_wgs_hg38_novaseqX_v2.1.sorted.vcf.gz,{{REFERENCE_DATA}}/poirot/svdb_query/gnomad.v4.1.sv.sites.no_cnv.PASS.vcf.gz'
-  extra: '--in_frq FRQ,FRQ --in_occ OCC,OCC --out_frq manta_AF,cnvpytor_AF --out_occ manta_OCC,cnvpytor_OCC '
+  db_string: >-
+    --db \
+      {{REFERENCE_DATA}}/poirot/svdb_query/manta_wgs_hg38_novaseqX_v3.0.sorted.vcf.gz,\
+      {{REFERENCE_DATA}}/poirot/svdb_query/cnvpytor_wgs_hg38_novaseqX_v3.0.sorted.vcf.gz,\
+      {{REFERENCE_DATA}}/poirot/svdb_query/tiddit_wgs_hg38_novaseqX_v3.0.sorted.vcf.gz,\
+      {{REFERENCE_DATA}}/poirot/svdb_query/melt_wgs_hg38_novaseqX_v3.0.sorted.vcf.gz,\
+      {{REFERENCE_DATA}}/poirot/svdb_query/scramble_wgs_hg38_novaseqX_v3.0.sorted.vcf.gz,\
+      {{REFERENCE_DATA}}/poirot/svdb_query/gnomad.v4.1.sv.sites.no_cnv.PASS.vcf.gz
 
 vep:
   vep_cache: '{{REFERENCE_DATA}}/poirot/VEP/'
