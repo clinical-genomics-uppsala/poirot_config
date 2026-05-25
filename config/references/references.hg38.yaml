@@ -95,7 +95,7 @@
       type: file
       url: file:/beegfs-storage/data/ref_data/wp3/svdb/svdb_create_novaseqx/cnvpytor_wgs_hg38_novaseqX_v3.0.sorted.vcf.gz
     manta:
-      checksum: 
+      checksum: d4a2a236d04b24941e2f115f0e567a6f
       path: poirot/svdb_query/manta_wgs_hg38_novaseqX_v3.0.sorted.vcf.gz
       type: file
       url: file:/beegfs-storage/data/ref_data/wp3/svdb/svdb_create_novaseqx/manta_wgs_hg38_novaseqX_v3.0.sorted.vcf.gz
