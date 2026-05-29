@@ -89,14 +89,12 @@ stranger:
   catalog: "config/str_catalog/variant_catalog_hg38.json"
 
 svdb_query:
-  db_string: >-
-    --db \
-      /beegfs-storage/data/ref_data/wp3/svdb/svdb_create_novaseqx/manta_wgs_hg38_novaseqX_v3.0.sorted.vcf.gz,\
-      /beegfs-storage/data/ref_data/wp3/svdb/svdb_create_novaseqx/cnvpytor_wgs_hg38_novaseqX_v3.0.sorted.vcf.gz,\
-      /beegfs-storage/data/ref_data/wp3/svdb/svdb_create_novaseqx/tiddit_wgs_hg38_novaseqX_v3.0.sorted.vcf.gz,\
-      /beegfs-storage/data/ref_data/wp3/svdb/svdb_create_novaseqx/melt_wgs_hg38_novaseqX_v3.0.sorted.vcf.gz,\
-      /beegfs-storage/data/ref_data/wp3/svdb/svdb_create_novaseqx/scramble_wgs_hg38_novaseqX_v3.0.sorted.vcf.gz,\
-      /beegfs-storage/data/ref_data/wp3/gnomad/gnomad.v4.1.sv.sites.no_cnv.PASS.vcf.gz
+  db_string: "--db /beegfs-storage/data/ref_data/wp3/svdb/svdb_create_novaseqx/manta_wgs_hg38_novaseqX_v3.0.sorted.vcf.gz,\
+              /beegfs-storage/data/ref_data/wp3/svdb/svdb_create_novaseqx/cnvpytor_wgs_hg38_novaseqX_v3.0.sorted.vcf.gz,\
+              /beegfs-storage/data/ref_data/wp3/svdb/svdb_create_novaseqx/tiddit_wgs_hg38_novaseqX_v3.0.sorted.vcf.gz,\
+              /beegfs-storage/data/ref_data/wp3/svdb/svdb_create_novaseqx/melt_wgs_hg38_novaseqX_v3.0.sorted.vcf.gz,\
+              /beegfs-storage/data/ref_data/wp3/svdb/svdb_create_novaseqx/scramble_wgs_hg38_novaseqX_v3.0.sorted.vcf.gz,\
+              /beegfs-storage/data/ref_data/wp3/gnomad/gnomad.v4.1.sv.sites.no_cnv.PASS.vcf.gz"
 
 vep:
   vep_cache: "/beegfs-storage/data/ref_genomes/VEP/"
