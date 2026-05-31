@@ -5,9 +5,6 @@ This repository currently owns the production site overlays for
 
 ## Added in this pass
 
-- `config/site/example.local.yaml`
-- `config/site/miarka.local.yaml`
-- `config/site/marvin.local.yaml`
 - `profiles/slurm/config.yaml`
 - `profiles/local/config.yaml`
 
@@ -23,7 +20,6 @@ The existing production files remain in place for compatibility:
 
 - Decide whether this config repo should remain separate or be packed as a
   versioned site-config bundle beside `poirot_rd_wgs`.
-- Move remaining absolute paths from production overlays toward
-  `REFERENCE_DATA_DIR`, `PACKAGED_REF_DIR`, `CONTAINER_DIR`, and
-  `HYDRA_MODULES_DIR`.
+- Move remaining absolute paths behind a common `cgu/library` layout so site
+  config only needs the installation parent and runtime resources.
 - Keep CPU/GPU as execution modes, not cluster-specific config filenames.
