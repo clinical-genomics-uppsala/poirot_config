@@ -1,0 +1,5 @@
+cores: 1
+printshellcmds: True
+rerun-incomplete: True
+use-singularity: False
+configfiles: ["config/config.yaml", "config/site/example.local.yaml"]

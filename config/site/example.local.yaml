@@ -1,0 +1,31 @@
+# Example local/site override for Poirot.
+# Copy this file to config/site/<site>.local.yaml and adjust paths for the target cluster.
+
+PIPELINE_HOME: /opt/cgu/repos/poirot_rd_wgs
+REFERENCE_DATA_DIR: /opt/cgu/references/GRCh38
+CONTAINER_DIR: /opt/cgu/containers
+HYDRA_MODULES_DIR: /opt/cgu/hydra-modules
+RESOURCES_FILE: config/resources_production_pipeline.yaml
+PACKAGED_REF_DIR: "{{REFERENCE_DATA_DIR}}/pipelines/poirot_rd_wgs"
+SCRATCH_DIR: /tmp
+
+resources: "{{RESOURCES_FILE}}"
+hydra_local_path: "{{HYDRA_MODULES_DIR}}"
+
+reference:
+  coverage_bed: "{{REFERENCE_DATA_DIR}}/annotation/refseq/GCF_000001405.40-RS_2024_08_coverage_20260216.bed"
+  design_bed: "{{REFERENCE_DATA_DIR}}/genome/homo_sapiens.hg38.wgs.bed"
+  exome_bed: "{{REFERENCE_DATA_DIR}}/genome/Twist_Comprehensive_Exome_Covered_Targets_hg38.bed"
+  exome_intervals: "{{REFERENCE_DATA_DIR}}/genome/Twist_Comprehensive_Exome_Covered_Targets_hg38.interval_list"
+  fasta: "{{REFERENCE_DATA_DIR}}/genome/GCA_000001405.15_GRCh38_no_alt_analysis_set_GRCmasked.fasta"
+  fai: "{{REFERENCE_DATA_DIR}}/genome/GCA_000001405.15_GRCh38_no_alt_analysis_set_GRCmasked.fasta.fai"
+  genepanels: "{{PACKAGED_REF_DIR}}/config/gene_panels/genepanels_WGS.list"
+  sites: "{{REFERENCE_DATA_DIR}}/known-sites/Homo_sapiens_assembly38.known_indels.vcf.gz"
+  wgs_intervals: "{{REFERENCE_DATA_DIR}}/genome/homo_sapiens.hg38.wgs.interval_list"
+  str_panels_dir: "{{PACKAGED_REF_DIR}}/config/str_panels"
+
+vep:
+  vep_cache: "{{REFERENCE_DATA_DIR}}/annotation/vep"
+
+vep_svdb:
+  vep_cache: "{{REFERENCE_DATA_DIR}}/annotation/vep"
