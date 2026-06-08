@@ -90,15 +90,30 @@
 
   svdb_query:
     cnvpytor:
-      checksum: 1ede15945a52fd6fff8a8a55c35fccfd
-      path: poirot/svdb_query/cnvpytor_wgs_hg38_novaseqX_v2.1.sorted.vcf.gz
+      checksum: 164d91b54bcd049287fef048451bc4a3
+      path: poirot/svdb_query/cnvpytor_wgs_hg38_novaseqX_v3.0.sorted.vcf.gz
       type: file
-      url: file:/beegfs-storage/data/ref_data/wp3/svdb/svdb_create_novaseqx/cnvpytor_wgs_hg38_novaseqX_v2.1.sorted.vcf.gz
+      url: file:/beegfs-storage/data/ref_data/wp3/svdb/svdb_create_novaseqx/cnvpytor_wgs_hg38_novaseqX_v3.0.sorted.vcf.gz
     manta:
-      checksum: c32d360b7b539bfc2a4fe5e47f0c9a19
-      path: poirot/svdb_query/manta_wgs_hg38_novaseqX_v2.0.sorted.vcf.gz
+      checksum: d4a2a236d04b24941e2f115f0e567a6f
+      path: poirot/svdb_query/manta_wgs_hg38_novaseqX_v3.0.sorted.vcf.gz
       type: file
-      url: file:/beegfs-storage/data/ref_data/wp3/svdb/svdb_create_novaseqx/manta_wgs_hg38_novaseqX_v2.0.sorted.vcf.gz
+      url: file:/beegfs-storage/data/ref_data/wp3/svdb/svdb_create_novaseqx/manta_wgs_hg38_novaseqX_v3.0.sorted.vcf.gz
+    tiddit:
+      checksum: 751e52b2fc0788572a73a0363136d87d 
+      path: poirot/svdb_query/tiddit_wgs_hg38_novaseqX_v3.0.sorted.vcf.gz
+      type: file
+      url: file:/beegfs-storage/data/ref_data/wp3/svdb/svdb_create_novaseqx/tiddit_wgs_hg38_novaseqX_v3.0.sorted.vcf.gz
+    melt:
+      checksum: 3e1a26951c9ac7091afed6120eba9ef6
+      path: poirot/svdb_query/melt_wgs_hg38_novaseqX_v3.0.sorted.vcf.gz
+      type: file
+      url: file:/beegfs-storage/data/ref_data/wp3/svdb/svdb_create_novaseqx/melt_wgs_hg38_novaseqX_v3.0.sorted.vcf.gz
+    scramble:
+      checksum: 0b7c6f20a0037043689749c56b3c5339
+      path: poirot/svdb_query/scramble_wgs_hg38_novaseqX_v3.0.sorted.vcf.gz
+      type: file
+      url: file:/beegfs-storage/data/ref_data/wp3/svdb/svdb_create_novaseqx/scramble_wgs_hg38_novaseqX_v3.0.sorted.vcf.gz
   
   verifybamid:
     mu:
