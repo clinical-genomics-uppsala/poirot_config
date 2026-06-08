@@ -37,7 +37,7 @@
       type: file
       url: file:/beegfs-storage/data/ref_genomes/GRCh38/GRCmasked/homo_sapiens.hg38.wgs.interval_list
     str_catalog:
-      checksum: 9f991de16615366c9195c671d205a440
+      checksum: 1ccc890d240e37d14f80d928c75686ef
       path: poirot/config/str_catalog/variant_catalog_hg38.json
       type: file
       url: file:poirot_config/config/str_catalog/variant_catalog_hg38.json
@@ -56,7 +56,7 @@
     checksum: c14e4639fb57a9e191ff8b57c9b313d3
     path: poirot/config/cnv_filter_bed/chrX_PAR_HG38.bed
     type: file
-    url: file:poirot/config/cnv_filter_bed/chrX_PAR_HG38.bed
+    url: file:poirot_config/config/cnv_filter_bed/chrX_PAR_HG38.bed
 
   colorsdb_snv_echtvar:
     checksum: 0e4b4ffcf3479604497a3eda4adf577e
