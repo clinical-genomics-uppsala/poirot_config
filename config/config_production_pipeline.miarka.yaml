@@ -64,6 +64,9 @@ echtvar_anno:
 filter_par_dups:
   bed: "config/cnv_filter_bed/chrX_PAR_HG38.bed"
 
+gatk_lift_over_vcf:
+  shift_back_chain: '{{REFERENCE_DATA}}/poirot/gatk_mito/ShiftBack.chain'
+
 gatk_mutect2:
   interval:
     mt: '{{REFERENCE_DATA}}/poirot/gatk_mito/non_control_region.chrM.interval_list'
