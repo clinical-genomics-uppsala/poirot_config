@@ -37,7 +37,7 @@
       type: file
       url: file:/beegfs-storage/data/ref_genomes/GRCh38/GRCmasked/homo_sapiens.hg38.wgs.interval_list
     str_catalog:
-      checksum: 9f991de16615366c9195c671d205a440
+      checksum: 1ccc890d240e37d14f80d928c75686ef
       path: poirot/config/str_catalog/variant_catalog_hg38.json
       type: file
       url: file:poirot_config/config/str_catalog/variant_catalog_hg38.json
