@@ -87,6 +87,12 @@
     path: poirot/peddy/v0.4.8/GRCH38.bed
     type: file
     url: file:/beegfs-storage/data/ref_data/peddy/v0.4.8/GRCH38.bed
+  
+  somalier_sites:
+    checksum: aba14164be7c2c2ed7458277374bb95c
+    path: poirot/somalier/v0.2.18/sites.hg38.vcf.gz
+    type: file
+    url: file:/beegfs-storage/data/ref_data/somalier/v0.2.18/sites.hg38.vcf.gz
 
   svdb_query:
     cnvpytor:

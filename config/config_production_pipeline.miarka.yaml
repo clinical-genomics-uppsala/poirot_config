@@ -97,6 +97,9 @@ pbrun_fq2bam:
   extra: '--gpusort --gpuwrite --num-cpu-threads-per-stage 10 --fix-mate '
   tmp_dir: $TMPDIR
 
+somalier_trio_extract:
+  sites: "{{REFERENCE_DATA}}/poirot/somalier/v0.2.18/sites.hg38.vcf.gz"
+
 stranger:
   catalog: '{{REFERENCE_DATA}}/poirot/config/str_catalog/variant_catalog_hg38.json'
 
