@@ -85,6 +85,9 @@ mt_reference:
   mt_shifted: "/beegfs-storage/data/ref_data/gatk_mito/Homo_sapiens_assembly38.chrM.shifted_by_8000_bases.fasta"
   blacklist: /beegfs-storage/data/ref_data/gatk_mito/blacklist_sites.hg38.chrM.bed
 
+somalier_trio_extract:
+  sites: "/beegfs-storage/data/ref_data/somalier/v0.2.18/sites.hg38.vcf.gz"
+
 stranger:
   catalog: "config/str_catalog/variant_catalog_hg38.json"
 
