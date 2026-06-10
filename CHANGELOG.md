@@ -1,5 +1,19 @@
 # Changelog
 
+## [0.19.0](https://github.com/clinical-genomics-uppsala/poirot_config/compare/v0.18.0...v0.19.0) (2026-06-10)
+
+
+### Features
+
+* update the svdb database versions ([bba5464](https://github.com/clinical-genomics-uppsala/poirot_config/commit/bba546426289f4d93c97cfca9c199f47207b130c))
+
+
+### Bug Fixes
+
+* Add gatk_lift_over_vcf settings to miarka config file ([89e6d83](https://github.com/clinical-genomics-uppsala/poirot_config/commit/89e6d832740fa0339f1795a6bea2534102da882a))
+* add missing somalier sites entries from the configs ([8c52b09](https://github.com/clinical-genomics-uppsala/poirot_config/commit/8c52b098e568b75171759a556e79d115a9d897f0))
+* Update checksum in for str catalog ([48650db](https://github.com/clinical-genomics-uppsala/poirot_config/commit/48650db41af69828fe39346c1093c1f175dbe11b))
+
 ## [0.18.0](https://github.com/clinical-genomics-uppsala/poirot_config/compare/v0.17.0...v0.18.0) (2026-05-12)
 
 
