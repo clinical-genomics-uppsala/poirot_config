@@ -91,11 +91,11 @@ mt_reference:
 pbrun_deepvariant:
   extra: '--num-cpu-threads-per-stream 8  --num-streams-per-gpu 4 --disable-use-window-selector-model
     --gvcf '
-  tmp_dir: $TMPDIR
+  tmp_dir: /scratch/$SLURM_JOB_ID
 
 pbrun_fq2bam:
   extra: '--gpusort --gpuwrite --num-cpu-threads-per-stage 10 --fix-mate '
-  tmp_dir: $TMPDIR
+  tmp_dir: /scratch/$SLURM_JOB_ID
 
 somalier_trio_extract:
   sites: "{{REFERENCE_DATA}}/poirot/somalier/v0.2.18/sites.hg38.vcf.gz"
@@ -109,7 +109,7 @@ svdb_query:
               {{REFERENCE_DATA}}/poirot/svdb_query/tiddit_wgs_hg38_novaseqX_v3.0.sorted.vcf.gz,\
               {{REFERENCE_DATA}}/poirot/svdb_query/melt_wgs_hg38_novaseqX_v3.0.sorted.vcf.gz,\
               {{REFERENCE_DATA}}/poirot/svdb_query/scramble_wgs_hg38_novaseqX_v3.0.sorted.vcf.gz,\
-              {{REFERENCE_DATA}}/poirot/svdb_query/gnomad.v4.1.sv.sites.no_cnv.PASS.vcf.gz"
+              {{REFERENCE_DATA}}/poirot/gnomad.v4.1.sv.sites.no_cnv.PASS.vcf.gz"
 
 vep:
   vep_cache: '{{REFERENCE_DATA}}/poirot/VEP/'
