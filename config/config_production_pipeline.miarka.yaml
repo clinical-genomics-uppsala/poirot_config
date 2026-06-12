@@ -109,7 +109,7 @@ svdb_query:
               {{REFERENCE_DATA}}/poirot/svdb_query/tiddit_wgs_hg38_novaseqX_v3.0.sorted.vcf.gz,\
               {{REFERENCE_DATA}}/poirot/svdb_query/melt_wgs_hg38_novaseqX_v3.0.sorted.vcf.gz,\
               {{REFERENCE_DATA}}/poirot/svdb_query/scramble_wgs_hg38_novaseqX_v3.0.sorted.vcf.gz,\
-              {{REFERENCE_DATA}}/poirot/gnomad.v4.1.sv.sites.no_cnv.PASS.vcf.gz"
+              {{REFERENCE_DATA}}/poirot/svdb_query/gnomad.v4.1.sv.sites.no_cnv.PASS.vcf.gz"
 
 vep:
   vep_cache: '{{REFERENCE_DATA}}/poirot/VEP/'
