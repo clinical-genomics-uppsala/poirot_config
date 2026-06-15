@@ -1,0 +1,27 @@
+
+jobs: 100
+keep-going: True
+restart-times: 1
+rerun-incomplete: True
+max-jobs-per-second: 10
+max-status-checks-per-second: 10
+use-singularity: True
+
+slurm: True
+default-resources:
+  - slurm_partition="core"
+  - slurm_account="ngi2024001"
+  - runtime="12h"
+  - nodes=1
+    
+set-resources:
+  - parabricks_fq2bam:slurm_extra="--gres=gpu:l40s:3"
+  - parabricks_fq2bam:slurm_partition="gpu"
+  - parabricks_deepvariant:slurm_extra="--gres=gpu:l40s:3"
+  - parabricks_deepvariant:slurm_partition="gpu"
+
+
+configfiles: ["config/config.yaml", "config/config_production_pipeline.miarka.yaml"]
+singularity-args: "--cleanenv -B $(pwd) -B /proj -B /scratch --nv --env SLURM_JOB_ID=$SLURM_JOB_ID "
+singularity-prefix: "/proj/ngi2024001/nobackup/bin/wp3_hg/apptainer_cache/"
+wrapper-prefix: "git+file://proj/ngi2024001/nobackup/bin/wp3_hg/poirot_rd_wgs_${TAG_OR_BRANCH}/snakemake-wrappers/"
