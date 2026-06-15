@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.20.0](https://github.com/clinical-genomics-uppsala/poirot_config/compare/v0.19.0...v0.20.0) (2026-06-15)
+
+
+### Features
+
+* add miarka slurm profile ([c7b509a](https://github.com/clinical-genomics-uppsala/poirot_config/commit/c7b509aa3a74f1ef19a570c534865dfd02edb008))
+* add slurm profile yaml ([cf8f596](https://github.com/clinical-genomics-uppsala/poirot_config/commit/cf8f596f45e200a351d3492ca5136e16c27ed03a))
+
+
+### Bug Fixes
+
+* update path to gnomda SV files ([78d212a](https://github.com/clinical-genomics-uppsala/poirot_config/commit/78d212aa49f168efd9900afa508bde857ed1e3d6))
+
 ## [0.19.0](https://github.com/clinical-genomics-uppsala/poirot_config/compare/v0.18.0...v0.19.0) (2026-06-10)
 
 
