@@ -107,15 +107,13 @@ pbrun_fq2bam:
   mem_per_cpu: 6000
   partition: "gpu"
   threads: 32
-  time: "02:00:00"
 
 pbrun_deepvariant:
-  gres: "--gres=gres:gpu:a100:2"
-  mem_mb: 240000
-  mem_per_cpu: 5000
+  gres: "--gres=gres:gpu:l40s:3"
+  mem_mb: 192000
+  mem_per_cpu: 6000  
   partition: "gpu"
-  threads: 48
-  time: "02:00:00"
+  threads: 32
 
 peddy:
   mem_mb: 49152
