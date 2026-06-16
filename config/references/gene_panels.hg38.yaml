@@ -1,7 +1,7 @@
 ---
   reference:
     genepanels:
-      checksum: 9a5c82b3fbaa2f34a0fb5abe1fde8349
+      checksum: 5c76b1ee23e1cd002fee7d0ed79dbb07
       path: poirot/config/gene_panels/genepanels_WGS.list
       type: file
       url: file:poirot_config/config/gene_panels/genepanels_WGS.list
