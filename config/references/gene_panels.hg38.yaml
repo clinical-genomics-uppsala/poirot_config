@@ -1,7 +1,7 @@
 ---
   reference:
     genepanels:
-      checksum: 9a5c82b3fbaa2f34a0fb5abe1fde8349
+      checksum: 5c76b1ee23e1cd002fee7d0ed79dbb07
       path: poirot/config/gene_panels/genepanels_WGS.list
       type: file
       url: file:poirot_config/config/gene_panels/genepanels_WGS.list
@@ -15,11 +15,11 @@
       checksum: 56148127c908f5c7d12b50790680288e
       type: file
       url: file:poirot_config/config/gene_panels/Angioodem_v1.list
-    Arytmier:
-      path: poirot/config/gene_panels/Arytmier.list
-      checksum: fc4781e323c2ca32cd5279c3913169ce
+    Arytmi_och_kardiomyopati_v3:
+      path: poirot/config/gene_panels/Arytmi_och_kardiomyopati_v3.list
+      checksum: e1474ad76a966a092abad3029d2e35fc
       type: file
-      url: file:poirot_config/config/gene_panels/Arytmier.list
+      url: file:poirot_config/config/gene_panels/Arytmi_och_kardiomyopati_v3.list
     Ataxi_v5:
       path: poirot/config/gene_panels/Ataxi_v5.list
       checksum: 8d2938b868bee5e8de6f0878224f10f1
