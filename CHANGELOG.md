@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.21.0](https://github.com/clinical-genomics-uppsala/poirot_config/compare/v0.20.0...v0.21.0) (2026-06-23)
+
+
+### Features
+
+* update arytmi gene panel ([6ff4726](https://github.com/clinical-genomics-uppsala/poirot_config/commit/6ff4726a1e82a2ca58e80e9a83ec992d985e3bcb))
+
 ## [0.20.0](https://github.com/clinical-genomics-uppsala/poirot_config/compare/v0.19.0...v0.20.0) (2026-06-15)
 
 
