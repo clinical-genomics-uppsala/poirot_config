@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.22.0](https://github.com/clinical-genomics-uppsala/poirot_config/compare/v0.21.0...v0.22.0) (2026-06-25)
+
+
+### Features
+
+* remove tiddit svdb ([f56ad6e](https://github.com/clinical-genomics-uppsala/poirot_config/commit/f56ad6ee37044197bac24a937264f03c0674832a))
+
 ## [0.21.0](https://github.com/clinical-genomics-uppsala/poirot_config/compare/v0.20.0...v0.21.0) (2026-06-23)
 
 
