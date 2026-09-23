@@ -5,37 +5,37 @@
       checksum: e433a4bc249c92feba4805ac011f0e2d
       path: poirot/GCA_000001405.15_GRCh38_no_alt_analysis_set_GRCmasked.fasta
       type: file
-      url: file:/beegfs-storage/data/ref_genomes/GRCh38/GRCmasked/GCA_000001405.15_GRCh38_no_alt_analysis_set_GRCmasked.fasta
+      file: /beegfs-storage/data/ref_genomes/GRCh38/GRCmasked/GCA_000001405.15_GRCh38_no_alt_analysis_set_GRCmasked.fasta
     fasta_index:
       checksum: a44cb7b437c4d34a78047d4d42519f3f
       path: poirot/GCA_000001405.15_GRCh38_no_alt_analysis_set_GRCmasked.fasta.fai
       type: file
-      url: file:/beegfs-storage/data/ref_genomes/GRCh38/GRCmasked/GCA_000001405.15_GRCh38_no_alt_analysis_set_GRCmasked.fasta.fai
+      file: /beegfs-storage/data/ref_genomes/GRCh38/GRCmasked/GCA_000001405.15_GRCh38_no_alt_analysis_set_GRCmasked.fasta.fai
     design_bed:
       checksum: 5b0df2472fd0880aad8e85c583a97232
       path: poirot/homo_sapiens.hg38.wgs.bed
       type: file
-      url: file:/beegfs-storage/data/ref_genomes/GRCh38/GRCmasked/homo_sapiens.hg38.wgs.bed
+      file: /beegfs-storage/data/ref_genomes/GRCh38/GRCmasked/homo_sapiens.hg38.wgs.bed
     exome_bed:
       checksum: f8a920a0983b7fe9998be30d5ee18810
       path: poirot/hg38_exome_comp_spikein_v2.0.2_targets_sorted.re_annotated.sorted.bed
       type: file
-      url: file:/beegfs-storage/data/ref_genomes/GRCh38/GRCmasked/hg38_exome_comp_spikein_v2.0.2_targets_sorted.re_annotated.sorted.bed
+      file: /beegfs-storage/data/ref_genomes/GRCh38/GRCmasked/hg38_exome_comp_spikein_v2.0.2_targets_sorted.re_annotated.sorted.bed
     exome_intervals:
       checksum: eb7560e7955cbb7ed4aa33a5b50a36d6
       path: poirot/hg38_exome_comp_spikein_v2.0.2_targets_sorted.re_annotated.sorted.interval_list
       type: file
-      url: file:/beegfs-storage/data/ref_genomes/GRCh38/GRCmasked/hg38_exome_comp_spikein_v2.0.2_targets_sorted.re_annotated.sorted.interval_list
+      file: /beegfs-storage/data/ref_genomes/GRCh38/GRCmasked/hg38_exome_comp_spikein_v2.0.2_targets_sorted.re_annotated.sorted.interval_list
     sites:
       checksum: 14cc588a271951ac1806f9be895fb51f
       path: poirot/Homo_sapiens_assembly38.known_indels.vcf.gz
       type: file
-      url: file:/beegfs-storage/data/ref_genomes/GRCh38/GRCmasked/Homo_sapiens_assembly38.known_indels.vcf.gz
+      file: /beegfs-storage/data/ref_genomes/GRCh38/GRCmasked/Homo_sapiens_assembly38.known_indels.vcf.gz
     wgs_intervals: 
       checksum: 3d7e610b5dba434a809827931293f2fe
       path: poirot/homo_sapiens.hg38.wgs.interval_list
       type: file
-      url: file:/beegfs-storage/data/ref_genomes/GRCh38/GRCmasked/homo_sapiens.hg38.wgs.interval_list
+      file: /beegfs-storage/data/ref_genomes/GRCh38/GRCmasked/homo_sapiens.hg38.wgs.interval_list
     str_catalog:
       checksum: 1ccc890d240e37d14f80d928c75686ef
       path: poirot/config/str_catalog/variant_catalog_hg38.json
@@ -45,12 +45,12 @@
       checksum: 9f5c616f44f601bf7be983cc17ead95d
       path: poirot/GRCh38_chromosomes.bed.gz
       type: file
-      url: file:/beegfs-storage/data/ref_genomes/GRCh38/GRCmasked/GRCh38_chromosomes.bed.gz
+      file: /beegfs-storage/data/ref_genomes/GRCh38/GRCmasked/GRCh38_chromosomes.bed.gz
     GRCh38_chromosomes_index:
       checksum: 3b115d2350fe850cb051a6133ee3659a
       path: poirot/GRCh38_chromosomes.bed.gz.tbi
       type: file
-      url: file:/beegfs-storage/data/ref_genomes/GRCh38/GRCmasked/GRCh38_chromosomes.bed.gz.tbi
+      file: /beegfs-storage/data/ref_genomes/GRCh38/GRCmasked/GRCh38_chromosomes.bed.gz.tbi
   
   cnv_filter_bed:
     checksum: c14e4639fb57a9e191ff8b57c9b313d3
@@ -62,86 +62,86 @@
     checksum: 0e4b4ffcf3479604497a3eda4adf577e
     path: poirot/CoLoRSdb.GRCh38.v1.2.0.deepvariant.glnexus.vcf.gz.zip
     type: file
-    url: file:/data/ref_data/wp3/nallo_refs/0.3.0/CoLoRSdb.GRCh38.v1.2.0.deepvariant.glnexus.vcf.gz.zip
+    file: /data/ref_data/wp3/nallo_refs/0.3.0/CoLoRSdb.GRCh38.v1.2.0.deepvariant.glnexus.vcf.gz.zip
   
   gnomad_snv_echtvar:
     checksum: 329566e66e485e16aea90dff83973db4
     path: poirot/gnomad_snvs.zip
     type: file
-    url: file:/data/ref_data/wp3/nallo_refs/0.3.0/gnomad_snvs.zip
+    file: /data/ref_data/wp3/nallo_refs/0.3.0/gnomad_snvs.zip
 
   gnomad_sv_vcf:
     checksum: 944e9684c415104bcef254a92a72f246
     path: poirot/svdb_query/gnomad.v4.1.sv.sites.no_cnv.PASS.vcf.gz
     type: file
-    url: file:/beegfs-storage/data/ref_data/wp3/gnomad/gnomad.v4.1.sv.sites.no_cnv.PASS.vcf.gz
+    file: /beegfs-storage/data/ref_data/wp3/gnomad/gnomad.v4.1.sv.sites.no_cnv.PASS.vcf.gz
   
   gnomad_sv_vcf_index:
     checksum: d7c447330d89536b3bf8aafe45deb7eb
     path: poirot/svdb_query/gnomad.v4.1.sv.sites.no_cnv.PASS.vcf.gz.tbi
     type: file
-    url: file:/beegfs-storage/data/ref_data/wp3/gnomad/gnomad.v4.1.sv.sites.no_cnv.PASS.vcf.gz.tbi
+    file: /beegfs-storage/data/ref_data/wp3/gnomad/gnomad.v4.1.sv.sites.no_cnv.PASS.vcf.gz.tbi
     
   peddy_sites:
     checksum: 736f74618ab09407ffa102bbb6475015
     path: poirot/peddy/v0.4.8/GRCH38.bed
     type: file
-    url: file:/beegfs-storage/data/ref_data/peddy/v0.4.8/GRCH38.bed
+    file: /beegfs-storage/data/ref_data/peddy/v0.4.8/GRCH38.bed
   
   somalier_sites:
     checksum: aba14164be7c2c2ed7458277374bb95c
     path: poirot/somalier/v0.2.18/sites.hg38.vcf.gz
     type: file
-    url: file:/beegfs-storage/data/ref_data/somalier/v0.2.18/sites.hg38.vcf.gz
+    file: /beegfs-storage/data/ref_data/somalier/v0.2.18/sites.hg38.vcf.gz
 
   svdb_query:
     cnvpytor:
       checksum: 164d91b54bcd049287fef048451bc4a3
       path: poirot/svdb_query/cnvpytor_wgs_hg38_novaseqX_v3.0.sorted.vcf.gz
       type: file
-      url: file:/beegfs-storage/data/ref_data/wp3/svdb/svdb_create_novaseqx/cnvpytor_wgs_hg38_novaseqX_v3.0.sorted.vcf.gz
+      file: /beegfs-storage/data/ref_data/wp3/svdb/svdb_create_novaseqx/cnvpytor_wgs_hg38_novaseqX_v3.0.sorted.vcf.gz
     manta:
       checksum: d4a2a236d04b24941e2f115f0e567a6f
       path: poirot/svdb_query/manta_wgs_hg38_novaseqX_v3.0.sorted.vcf.gz
       type: file
-      url: file:/beegfs-storage/data/ref_data/wp3/svdb/svdb_create_novaseqx/manta_wgs_hg38_novaseqX_v3.0.sorted.vcf.gz
+      file: /beegfs-storage/data/ref_data/wp3/svdb/svdb_create_novaseqx/manta_wgs_hg38_novaseqX_v3.0.sorted.vcf.gz
     tiddit:
       checksum: 751e52b2fc0788572a73a0363136d87d 
       path: poirot/svdb_query/tiddit_wgs_hg38_novaseqX_v3.0.sorted.vcf.gz
       type: file
-      url: file:/beegfs-storage/data/ref_data/wp3/svdb/svdb_create_novaseqx/tiddit_wgs_hg38_novaseqX_v3.0.sorted.vcf.gz
+      file: /beegfs-storage/data/ref_data/wp3/svdb/svdb_create_novaseqx/tiddit_wgs_hg38_novaseqX_v3.0.sorted.vcf.gz
     melt:
       checksum: 3e1a26951c9ac7091afed6120eba9ef6
       path: poirot/svdb_query/melt_wgs_hg38_novaseqX_v3.0.sorted.vcf.gz
       type: file
-      url: file:/beegfs-storage/data/ref_data/wp3/svdb/svdb_create_novaseqx/melt_wgs_hg38_novaseqX_v3.0.sorted.vcf.gz
+      file: /beegfs-storage/data/ref_data/wp3/svdb/svdb_create_novaseqx/melt_wgs_hg38_novaseqX_v3.0.sorted.vcf.gz
     scramble:
       checksum: 0b7c6f20a0037043689749c56b3c5339
       path: poirot/svdb_query/scramble_wgs_hg38_novaseqX_v3.0.sorted.vcf.gz
       type: file
-      url: file:/beegfs-storage/data/ref_data/wp3/svdb/svdb_create_novaseqx/scramble_wgs_hg38_novaseqX_v3.0.sorted.vcf.gz
+      file: /beegfs-storage/data/ref_data/wp3/svdb/svdb_create_novaseqx/scramble_wgs_hg38_novaseqX_v3.0.sorted.vcf.gz
   
   verifybamid:
     mu:
       checksum: e487244f85c53b66865c34b588341e50
       path: poirot/verifybamid2/1000g.phase3.100k.b38.vcf.gz.dat.mu
       type: file
-      url: file:/beegfs-storage/data/ref_data/verifybamid2/1000g.phase3.100k.b38.vcf.gz.dat.mu
+      file: /beegfs-storage/data/ref_data/verifybamid2/1000g.phase3.100k.b38.vcf.gz.dat.mu
     bed:
       checksum: 689f507dc1f281dfe35880315a5ac19c
       path: poirot/verifybamid2/1000g.phase3.100k.b38.vcf.gz.dat.bed
       type: file
-      url: file:/beegfs-storage/data/ref_data/verifybamid2/1000g.phase3.100k.b38.vcf.gz.dat.bed
+      file: /beegfs-storage/data/ref_data/verifybamid2/1000g.phase3.100k.b38.vcf.gz.dat.bed
     UD:
       checksum: e93de9cf95d30486606e3f35b381d93c
       path: poirot/verifybamid2/1000g.phase3.100k.b38.vcf.gz.dat.UD
       type: file
-      url: file:/beegfs-storage/data/ref_data/verifybamid2/1000g.phase3.100k.b38.vcf.gz.dat.UD
+      file: /beegfs-storage/data/ref_data/verifybamid2/1000g.phase3.100k.b38.vcf.gz.dat.UD
     V:
       checksum: 8de3d2e20b6e391e8141829009c1e3e2
       path: poirot/verifybamid2/1000g.phase3.100k.b38.vcf.gz.dat.V
       type: file
-      url: file:/beegfs-storage/data/ref_data/verifybamid2/1000g.phase3.100k.b38.vcf.gz.dat.V
+      file: /beegfs-storage/data/ref_data/verifybamid2/1000g.phase3.100k.b38.vcf.gz.dat.V
     
 
   bwa_mem:
@@ -149,25 +149,25 @@
       checksum: f84b47b7ec12946b92d9762cec04b835 
       path: poirot/GCA_000001405.15_GRCh38_no_alt_analysis_set_GRCmasked.fasta.amb
       type: file
-      url: file:/beegfs-storage/data/ref_genomes/GRCh38/GRCmasked/GCA_000001405.15_GRCh38_no_alt_analysis_set_GRCmasked.fasta.amb
+      file: /beegfs-storage/data/ref_genomes/GRCh38/GRCmasked/GCA_000001405.15_GRCh38_no_alt_analysis_set_GRCmasked.fasta.amb
     ann:
       checksum: d8a1ff524ec2150c0b9b7e544dc086a6 
       path: poirot/GCA_000001405.15_GRCh38_no_alt_analysis_set_GRCmasked.fasta.ann
       type: file
-      url: file:/beegfs-storage/data/ref_genomes/GRCh38/GRCmasked/GCA_000001405.15_GRCh38_no_alt_analysis_set_GRCmasked.fasta.ann
+      file: /beegfs-storage/data/ref_genomes/GRCh38/GRCmasked/GCA_000001405.15_GRCh38_no_alt_analysis_set_GRCmasked.fasta.ann
     bwt:
       checksum: 3fce90c2d2c1ea3eafcdcd5f17ec8724
       path: poirot/GCA_000001405.15_GRCh38_no_alt_analysis_set_GRCmasked.fasta.bwt
       type: file
-      url: file:/beegfs-storage/data/ref_genomes/GRCh38/GRCmasked/GCA_000001405.15_GRCh38_no_alt_analysis_set_GRCmasked.fasta.bwt
+      file: /beegfs-storage/data/ref_genomes/GRCh38/GRCmasked/GCA_000001405.15_GRCh38_no_alt_analysis_set_GRCmasked.fasta.bwt
     pac:
       checksum: 586a1236048aa02f47296f799eacc175
       path: poirot/GCA_000001405.15_GRCh38_no_alt_analysis_set_GRCmasked.fasta.pac
       type: file
-      url: file:/beegfs-storage/data/ref_genomes/GRCh38/GRCmasked/GCA_000001405.15_GRCh38_no_alt_analysis_set_GRCmasked.fasta.pac
+      file: /beegfs-storage/data/ref_genomes/GRCh38/GRCmasked/GCA_000001405.15_GRCh38_no_alt_analysis_set_GRCmasked.fasta.pac
     sa:
       checksum: 678c3326343f00c18ff05aa5e67c090a
       path: poirot/GCA_000001405.15_GRCh38_no_alt_analysis_set_GRCmasked.fasta.sa
       type: file
-      url: file:/beegfs-storage/data/ref_genomes/GRCh38/GRCmasked/GCA_000001405.15_GRCh38_no_alt_analysis_set_GRCmasked.fasta.sa
+      file: /beegfs-storage/data/ref_genomes/GRCh38/GRCmasked/GCA_000001405.15_GRCh38_no_alt_analysis_set_GRCmasked.fasta.sa
   
