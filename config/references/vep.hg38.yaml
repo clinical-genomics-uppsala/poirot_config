@@ -10521,7 +10521,7 @@ vep:
       homo_sapiens_refseq/110_GRCh38/Y/9000001-10000000_reg.gz: 1beab833ff98c970c85278c2724a417d
       homo_sapiens_refseq/110_GRCh38/Y/all_vars.gz: a6a1cfbe5572f81985aa8926785d77ac
       homo_sapiens_refseq/110_GRCh38/Y/all_vars.gz.csi: 6b16e09ed801e3cc01fd23c6ebe3b5e0
-    file: /beegfs-storage/data/ref_genomes/VEP/homo_sapiens_refseq_vep_110_GRCh38.tar.gz
+    url: file:///beegfs-storage/data/ref_genomes/VEP/homo_sapiens_refseq_vep_110_GRCh38.tar.gz
 
 
     
