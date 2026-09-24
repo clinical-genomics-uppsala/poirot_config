@@ -56,7 +56,7 @@ melt:
     type: file
     url: file:/data/ref_data/wp3/melt/Hg38.genes.bed
   mei:
-    checksum: null
+    checksum: 47eefadac3d3ed1a3fa433fad22e2080
     path: pipelines/poirot/misc/mei_list.txt
     type: file
     url: file:/projects/wp3/Software/MELTv2.2.2/mei_list.txt
@@ -203,7 +203,7 @@ reference:
     type: file
     url: file:/data/ref_genomes/GRCh38/GRCmasked/homo_sapiens.hg38.wgs.bed
   exome_bed:
-    checksum: null
+    checksum: fd3a57c45d060cf57abe3c4b535bea1e
     path: pipelines/poirot/capture_kits/Twist_Comprehensive_Exome_Covered_Targets_hg38.bed
     type: file
     url: file:/data/ref_genomes/GRCh38/GRCmasked/Twist_Comprehensive_Exome_Covered_Targets_hg38.bed
@@ -228,7 +228,7 @@ reference:
     type: file
     url: file:/data/ref_genomes/GRCh38/GRCmasked/Homo_sapiens_assembly38.known_indels.vcf.gz
   sites_tbi:
-    checksum: null
+    checksum: 1a55fdfa6533ae5cbc70e8188e779229
     path: GRCh38/annotation/known_indels/Homo_sapiens_assembly38.known_indels.vcf.gz.tbi
     type: file
     url: file:/data/ref_genomes/GRCh38/GRCmasked/Homo_sapiens_assembly38.known_indels.vcf.gz.tbi
@@ -250,7 +250,7 @@ svdb_query:
     type: file
     url: file:/data/ref_data/wp3/svdb/svdb_create_novaseqx/cnvpytor_wgs_hg38_novaseqX_v3.0.sorted.vcf.gz
   cnvpytor_tbi:
-    checksum: null
+    checksum: 2b192a543d7e16f241c7715e6b19aafc
     path: pipelines/poirot/pon/cnvpytor_wgs_hg38_novaseqX_v3.0.sorted.vcf.gz.tbi
     type: file
     url: file:/data/ref_data/wp3/svdb/svdb_create_novaseqx/cnvpytor_wgs_hg38_novaseqX_v3.0.sorted.vcf.gz.tbi
@@ -260,7 +260,7 @@ svdb_query:
     type: file
     url: file:/data/ref_data/wp3/svdb/svdb_create_novaseqx/manta_wgs_hg38_novaseqX_v3.0.sorted.vcf.gz
   manta_tbi:
-    checksum: null
+    checksum: ac46982cfefd2636377b890172f9374d
     path: pipelines/poirot/pon/manta_wgs_hg38_novaseqX_v3.0.sorted.vcf.gz.tbi
     type: file
     url: file:/data/ref_data/wp3/svdb/svdb_create_novaseqx/manta_wgs_hg38_novaseqX_v3.0.sorted.vcf.gz.tbi
@@ -270,7 +270,7 @@ svdb_query:
     type: file
     url: file:/data/ref_data/wp3/svdb/svdb_create_novaseqx/melt_wgs_hg38_novaseqX_v3.0.sorted.vcf.gz
   melt_tbi:
-    checksum: null
+    checksum: 2bd6182a86008d640f43cb811a2f62cd
     path: pipelines/poirot/pon/melt_wgs_hg38_novaseqX_v3.0.sorted.vcf.gz.tbi
     type: file
     url: file:/data/ref_data/wp3/svdb/svdb_create_novaseqx/melt_wgs_hg38_novaseqX_v3.0.sorted.vcf.gz.tbi
@@ -280,7 +280,7 @@ svdb_query:
     type: file
     url: file:/data/ref_data/wp3/svdb/svdb_create_novaseqx/scramble_wgs_hg38_novaseqX_v3.0.sorted.vcf.gz
   scramble_tbi:
-    checksum: null
+    checksum: 964fc0e19a23f9dcfa2f7a513e5583dc
     path: pipelines/poirot/pon/scramble_wgs_hg38_novaseqX_v3.0.sorted.vcf.gz.tbi
     type: file
     url: file:/data/ref_data/wp3/svdb/svdb_create_novaseqx/scramble_wgs_hg38_novaseqX_v3.0.sorted.vcf.gz.tbi
