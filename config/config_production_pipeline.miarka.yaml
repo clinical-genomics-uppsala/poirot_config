@@ -106,7 +106,6 @@ stranger:
 svdb_query:
   db_string: "--db {{REFERENCE_DATA}}/poirot/svdb_query/manta_wgs_hg38_novaseqX_v3.0.sorted.vcf.gz,\
               {{REFERENCE_DATA}}/poirot/svdb_query/cnvpytor_wgs_hg38_novaseqX_v3.0.sorted.vcf.gz,\
-              {{REFERENCE_DATA}}/poirot/svdb_query/tiddit_wgs_hg38_novaseqX_v3.0.sorted.vcf.gz,\
               {{REFERENCE_DATA}}/poirot/svdb_query/melt_wgs_hg38_novaseqX_v3.0.sorted.vcf.gz,\
               {{REFERENCE_DATA}}/poirot/svdb_query/scramble_wgs_hg38_novaseqX_v3.0.sorted.vcf.gz,\
               {{REFERENCE_DATA}}/poirot/svdb_query/gnomad.v4.1.sv.sites.no_cnv.PASS.vcf.gz"
