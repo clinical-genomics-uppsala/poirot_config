@@ -1,7 +1,7 @@
 ---
   reference:
     genepanels:
-      checksum: 5c76b1ee23e1cd002fee7d0ed79dbb07
+      checksum: 0ec2430bb0b4b6a5830f6449fb85715a
       path: poirot/config/gene_panels/genepanels_WGS.list
       type: file
       url: file:poirot_config/config/gene_panels/genepanels_WGS.list
@@ -22,7 +22,7 @@
       url: file:poirot_config/config/gene_panels/Arytmi_och_kardiomyopati_v3.list
     Ataxi_v5:
       path: poirot/config/gene_panels/Ataxi_v5.list
-      checksum: 8d2938b868bee5e8de6f0878224f10f1
+      checksum: 3164c8aee32b76cd2f5e9c22febf78df
       type: file
       url: file:poirot_config/config/gene_panels/Ataxi_v5.list
     Bindvav_v3:
@@ -37,12 +37,12 @@
       url: file:poirot_config/config/gene_panels/Blueprint_pseudogenes.list
     Bred_NMD_v1:
       path: poirot/config/gene_panels/Bred_NMD_v1.list
-      checksum: 6f4780740db5b0a6b4efcf9dbccbecd0
+      checksum: 466e3f6a9e5997b34cc71a8afe4f5efc
       type: file
       url: file:poirot_config/config/gene_panels/Bred_NMD_v1.list
     Bred_skelettdysplasi:
       path: poirot/config/gene_panels/Bred_skelettdysplasi.list
-      checksum: aae368d0d61aa1a1ddfb446d34c3ae40
+      checksum: 2137cbfef843a8bbc0857ca457eb4ba9
       type: file
       url: file:poirot_config/config/gene_panels/Bred_skelettdysplasi.list
     Cadasil:
@@ -62,7 +62,7 @@
       url: file:poirot_config/config/gene_panels/ChiCaP.list
     Ciliopati_v1:
       path: poirot/config/gene_panels/Ciliopati_v1.list
-      checksum: 50d8cfe0d0d3a700e6582b333dbfaa52
+      checksum: e4b2741f3b1ff306110a419677892ceb
       type: file
       url: file:poirot_config/config/gene_panels/Ciliopati_v1.list
     Cornealdystrofi:
@@ -102,7 +102,7 @@
       url: file:poirot_config/config/gene_panels/Epilepsi.list
     Fostermissbildningar_v1:
       path: poirot/config/gene_panels/Fostermissbildningar_v1.list
-      checksum: 45fa94f4f42cd480042f1bc193dccba7
+      checksum: d9d2990560492396d9e93741cbad5381
       type: file
       url: file:poirot_config/config/gene_panels/Fostermissbildningar_v1.list
     Gitelman_Bartter_Liddle_v1:
@@ -252,7 +252,7 @@
       url: file:poirot_config/config/gene_panels/Njurcancer.list
     Njursjukdomar_v2:
       path: poirot/config/gene_panels/Njursjukdomar_v2.list
-      checksum: dc29d6eb4deacb286172bb55c6523a2b
+      checksum: 3973907f8734f428319aa1b61a077860
       type: file
       url: file:poirot_config/config/gene_panels/Njursjukdomar_v2.list
     Non-immune_hydrops_fetalis_v1:
@@ -337,7 +337,7 @@
       url: file:poirot_config/config/gene_panels/Rasopatier.list
     Retinal_degeneration:
       path: poirot/config/gene_panels/Retinal_degeneration.list
-      checksum: fe0dabacff6a0e8144c9373eb910a85f
+      checksum: 6ddff8532e186a9e164ea32bf7fc1a95
       type: file
       url: file:poirot_config/config/gene_panels/Retinal_degeneration.list
     Schwannomatos_och_menigiom:
