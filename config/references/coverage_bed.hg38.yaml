@@ -1,6 +1,6 @@
 reference:
     coverage_bed:
-      checksum: bd7e0ca41eda8321a752e6b86a0ac808
-      path: poirot/GCF_000001405.40-RS_2024_08_coverage_20261006.bed
+      checksum: f7dfd7fd43210dd9e83140c845bb2187
+      path: poirot/GCF_000001405.40-RS_2024_08_coverage_20260508.bed
       type: file
-      url: file:/beegfs-storage/data/ref_data/refseq/GCF_000001405.40-RS_2024_08_coverage_20261006.bed
+      url: file:/beegfs-storage/data/ref_data/refseq/GCF_000001405.40-RS_2024_08_coverage_20260508.bed
