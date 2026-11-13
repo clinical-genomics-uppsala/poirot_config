@@ -21,7 +21,7 @@ set-resources:
   - parabricks_deepvariant:slurm_partition="gpu"
 
 
-configfiles: ["config/config.yaml", "config/config_production_pipeline.miarka.yaml"]
+configfiles: ["config/config.yaml", "config/config_production_pipeline.miarka.yaml", "config/site_configs/site_config_miarka.yaml"]
 singularity-args: "--cleanenv -B $(pwd) -B /proj -B /scratch --nv --env SLURM_JOB_ID=$SLURM_JOB_ID "
 singularity-prefix: "/proj/ngi2024001/nobackup/bin/wp3_hg/apptainer_cache/"
 wrapper-prefix: "git+file://proj/ngi2024001/nobackup/bin/wp3_hg/poirot_rd_wgs_${TAG_OR_BRANCH}/snakemake-wrappers/"

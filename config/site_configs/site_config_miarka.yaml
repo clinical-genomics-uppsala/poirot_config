@@ -1,0 +1,13 @@
+# ---------------------------------------------------------------------------
+#  Site-config - Miarka
+#
+#  Laggs sist i profilens configfiles. Allt som beror pa klustret men inte pa
+#  assayen: var containrarna och hydra-modulerna ligger.
+# ---------------------------------------------------------------------------
+
+# Containerbiblioteket. Fylls av tools/build_containers.sh vid installation.
+CONTAINER_DIR: /proj/ngi2024001/nobackup/cgu/library/containers
+
+# Modulerna laggs lokalt vid installation (tagg maste finnas, klona med --tags).
+# PIPELINE_VERSION skickas med --config av startscriptet.
+hydra_local_path: /proj/ngi2024001/nobackup/bin/wp3_hg/poirot_rd_wgs_{{PIPELINE_VERSION}}/hydra-genetics

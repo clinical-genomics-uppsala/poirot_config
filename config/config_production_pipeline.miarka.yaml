@@ -1,8 +1,6 @@
 
 REFERENCE_DATA: /proj/ngi2024001/nobackup/bin/wp3_hg/design_and_ref_files
 
-hydra_local_path: /proj/ngi2024001/nobackup/bin/wp3_hg/poirot_rd_wgs_{{PIPELINE_VERSION}}/hydra-genetics
-
 resources: config/resources_production_pipeline.miarka.yaml
 
 reference:
