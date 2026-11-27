@@ -1,0 +1,16 @@
+# poirot_config/profiles/berk/config.yaml  (Slurm + DRMAA on BERK, based on miarka_drmaa)
+jobs: 100
+keep-going: True
+restart-times: 1
+rerun-incomplete: True
+latency-wait: 60
+max-jobs-per-second: 100
+max-status-checks-per-second: 100
+use-singularity: True
+configfiles: ["config/config.yaml", "config/config_production_pipeline.berk.yaml"]
+drmaa: "-p {resources.partition} -t {resources.time} -n {resources.threads} --mem={resources.mem_mb} {resources.gres} -J {rule} -e slurm/{rule}_%j.err -o slurm/{rule}_%j.out --nodes=1-1"
+default-resources: [gres="", ]
+drmaa-log-dir: "slurm"
+singularity-args: "--cleanenv -B /berkscale/cgu -B /scratch -B /berkscale/cgu/tmp/wp3_hg_tmp:/tmp --nv --env SLURM_JOB_ID="
+singularity-prefix: "/berkscale/cgu/bin/apptainer_images/"
+wrapper-prefix: "git+file:///berkscale/cgu/bin/pipelines/wp3_hg/poirot_rd_wgs_v1.2.1/snakemake-wrappers/"
