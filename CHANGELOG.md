@@ -1,5 +1,21 @@
 # Changelog
 
+## [0.23.0](https://github.com/clinical-genomics-uppsala/poirot_config/compare/v0.22.0...v0.23.0) (2026-11-27)
+
+
+### Features
+
+* add berk config to poirot ([8f2c7a7](https://github.com/clinical-genomics-uppsala/poirot_config/commit/8f2c7a7036bf95b6e4912c47354e5e6b58bc4cb6))
+* add new panels ([7e9363b](https://github.com/clinical-genomics-uppsala/poirot_config/commit/7e9363b23129e505c3fb59417c66627ce551dee0))
+* update outdated gene names ([f7212f6](https://github.com/clinical-genomics-uppsala/poirot_config/commit/f7212f64a8b99dba2cb1f11c23e1336e39192da0))
+
+
+### Bug Fixes
+
+* sort all genes alphabetically; update checksums ([a45df82](https://github.com/clinical-genomics-uppsala/poirot_config/commit/a45df822292d3cdd27609ecf43b36da1869274df))
+* update checksums ([d1559f7](https://github.com/clinical-genomics-uppsala/poirot_config/commit/d1559f742c8dc811c6ce40ead6b1ffe528cb3698))
+* update coverage bedfile ([31d8f33](https://github.com/clinical-genomics-uppsala/poirot_config/commit/31d8f33baf175aad4ef919ded165f949e17e7c34))
+
 ## [0.22.0](https://github.com/clinical-genomics-uppsala/poirot_config/compare/v0.21.0...v0.22.0) (2026-06-25)
 
 
