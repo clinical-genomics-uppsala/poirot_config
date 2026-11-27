@@ -161,7 +161,7 @@
       type: file
       url: file:poirot_config/config/gene_panels/Hypofystumor_v1.list
     Hypogonadotrop_hypogonadism_v1:
-      path: poirot/config/gene_panels/Hypogonadotrop_hypogonadism_v11.list
+      path: poirot/config/gene_panels/Hypogonadotrop_hypogonadism_v1.list
       checksum: 605e24ba29c688f4d31073248d7c2a51
       type: file
       url: file:poirot_config/config/gene_panels/Hypogonadotrop_hypogonadism_v1.list

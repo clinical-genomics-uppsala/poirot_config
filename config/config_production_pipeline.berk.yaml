@@ -1,0 +1,123 @@
+
+REFERENCE_DATA: /berkscale/cgu/data/wp3_hg/design_and_ref_files
+
+hydra_local_path: /berkscale/cgu/bin/pipelines/wp3_hg/poirot_rd_wgs_{{PIPELINE_VERSION}}/hydra-genetics
+
+resources: config/resources_production_pipeline.berk.yaml
+
+reference:
+  coverage_bed: '{{REFERENCE_DATA}}/poirot/GCF_000001405.40-RS_2024_08_coverage_20260508.bed'
+  design_bed: '{{REFERENCE_DATA}}/poirot/homo_sapiens.hg38.wgs.bed'
+  exome_bed: '{{REFERENCE_DATA}}/poirot/hg38_exome_comp_spikein_v2.0.2_targets_sorted.re_annotated.sorted.bed'
+  exome_intervals: '{{REFERENCE_DATA}}/poirot/hg38_exome_comp_spikein_v2.0.2_targets_sorted.re_annotated.sorted.interval_list'
+  fai: '{{REFERENCE_DATA}}/poirot/GCA_000001405.15_GRCh38_no_alt_analysis_set_GRCmasked.fasta.fai'
+  fasta: '{{REFERENCE_DATA}}/poirot/GCA_000001405.15_GRCh38_no_alt_analysis_set_GRCmasked.fasta'
+  genepanels: '{{REFERENCE_DATA}}/poirot/config/gene_panels/genepanels_WGS.list'
+  merge_contigs:
+    - .*_random
+    - chrUn_.*
+    - chrEBV
+  sites: '{{REFERENCE_DATA}}/poirot/Homo_sapiens_assembly38.known_indels.vcf.gz'
+  str_panels:
+    - ataxi.list
+    - dystoni.list
+    - spastisk_paraplegi.list
+  str_panels_dir: '{{REFERENCE_DATA}}/poirot/config/str_panels'
+  wgs_intervals: '{{REFERENCE_DATA}}/poirot/homo_sapiens.hg38.wgs.interval_list'
+
+bcftools_annotate:
+  annotation_db: "config/skipAF/genes_hgnc_skipAF_300326.bed"
+
+bwa_mem:
+  amb: '{{REFERENCE_DATA}}/poirot/GCA_000001405.15_GRCh38_no_alt_analysis_set_GRCmasked.fasta.amb'
+  ann: '{{REFERENCE_DATA}}/poirot/GCA_000001405.15_GRCh38_no_alt_analysis_set_GRCmasked.fasta.ann'
+  bwt: '{{REFERENCE_DATA}}/poirot/GCA_000001405.15_GRCh38_no_alt_analysis_set_GRCmasked.fasta.bwt'
+  pac: '{{REFERENCE_DATA}}/poirot/GCA_000001405.15_GRCh38_no_alt_analysis_set_GRCmasked.fasta.pac'
+  sa: '{{REFERENCE_DATA}}/poirot/GCA_000001405.15_GRCh38_no_alt_analysis_set_GRCmasked.fasta.sa'
+
+bwa_mem_mito:
+  amb:
+    mt: '{{REFERENCE_DATA}}/poirot/gatk_mito/Homo_sapiens_assembly38.chrM.fasta.amb'
+    mt_shifted: '{{REFERENCE_DATA}}/poirot/gatk_mito/Homo_sapiens_assembly38.chrM.shifted_by_8000_bases.fasta.amb'
+  ann:
+    mt: '{{REFERENCE_DATA}}/poirot/gatk_mito/Homo_sapiens_assembly38.chrM.fasta.ann'
+    mt_shifted: '{{REFERENCE_DATA}}/poirot/gatk_mito/Homo_sapiens_assembly38.chrM.shifted_by_8000_bases.fasta.ann'
+  bwt:
+    mt: '{{REFERENCE_DATA}}/poirot/gatk_mito/Homo_sapiens_assembly38.chrM.fasta.bwt'
+    mt_shifted: '{{REFERENCE_DATA}}/poirot/gatk_mito/Homo_sapiens_assembly38.chrM.shifted_by_8000_bases.fasta.bwt'
+  extra: '-K 100000000 -v3 -Y '
+  pac:
+    mt: '{{REFERENCE_DATA}}/poirot/gatk_mito/Homo_sapiens_assembly38.chrM.fasta.pac'
+    mt_shifted: '{{REFERENCE_DATA}}/poirot/gatk_mito/Homo_sapiens_assembly38.chrM.shifted_by_8000_bases.fasta.pac'
+  sa:
+    mt: '{{REFERENCE_DATA}}/poirot/gatk_mito/Homo_sapiens_assembly38.chrM.fasta.sa'
+    mt_shifted: '{{REFERENCE_DATA}}/poirot/gatk_mito/Homo_sapiens_assembly38.chrM.shifted_by_8000_bases.fasta.sa'
+
+expansionhunter:
+  variant_catalog: '{{REFERENCE_DATA}}/poirot/config/str_catalog/variant_catalog_hg38.json'
+
+echtvar_anno:
+  databases:
+    - "{{REFERENCE_DATA}}/poirot/gnomad_snvs.zip"
+    - "{{REFERENCE_DATA}}/poirot/CoLoRSdb.GRCh38.v1.2.0.deepvariant.glnexus.vcf.gz.zip"
+
+filter_par_dups:
+  bed: "config/cnv_filter_bed/chrX_PAR_HG38.bed"
+
+gatk_lift_over_vcf:
+  shift_back_chain: '{{REFERENCE_DATA}}/poirot/gatk_mito/ShiftBack.chain'
+
+gatk_mutect2:
+  interval:
+    mt: '{{REFERENCE_DATA}}/poirot/gatk_mito/non_control_region.chrM.interval_list'
+    mt_shifted: '{{REFERENCE_DATA}}/poirot/gatk_mito/control_region_shifted.chrM.interval_list'
+
+glnexus_peddy:
+  configfile: DeepVariantWGS
+  extra: '--bed {{REFERENCE_DATA}}/poirot/peddy/v0.4.8/GRCH38.bed '
+
+manta_config_n:
+  extra: --callRegions {{REFERENCE_DATA}}/poirot/GRCh38_chromosomes.bed.gz
+
+melt:
+  bed: "{{REFERENCE_DATA}}/poirot/melt/Hg38.genes.bed"
+  mei: "{{REFERENCE_DATA}}/poirot/melt/mei_list.berk.txt"
+
+mt_reference:
+  blacklist: '{{REFERENCE_DATA}}/poirot/gatk_mito/blacklist_sites.hg38.chrM.bed'
+  mt: '{{REFERENCE_DATA}}/poirot/gatk_mito/Homo_sapiens_assembly38.chrM.fasta'
+  mt_shifted: '{{REFERENCE_DATA}}/poirot/gatk_mito/Homo_sapiens_assembly38.chrM.shifted_by_8000_bases.fasta'
+
+pbrun_deepvariant:
+  extra: '--num-cpu-threads-per-stream 8  --num-streams-per-gpu 4 --disable-use-window-selector-model
+    --gvcf '
+  tmp_dir: /berkscale/cgu/tmp/wp3_hg_tmp
+
+pbrun_fq2bam:
+  extra: '--gpusort --gpuwrite --num-cpu-threads-per-stage 10 --fix-mate '
+  tmp_dir: /berkscale/cgu/tmp/wp3_hg_tmp
+
+somalier_trio_extract:
+  sites: "{{REFERENCE_DATA}}/poirot/somalier/v0.2.18/sites.hg38.vcf.gz"
+
+stranger:
+  catalog: '{{REFERENCE_DATA}}/poirot/config/str_catalog/variant_catalog_hg38.json'
+
+svdb_query:
+  db_string: "--db {{REFERENCE_DATA}}/poirot/svdb_query/manta_wgs_hg38_novaseqX_v3.0.sorted.vcf.gz,\
+              {{REFERENCE_DATA}}/poirot/svdb_query/cnvpytor_wgs_hg38_novaseqX_v3.0.sorted.vcf.gz,\
+              {{REFERENCE_DATA}}/poirot/svdb_query/melt_wgs_hg38_novaseqX_v3.0.sorted.vcf.gz,\
+              {{REFERENCE_DATA}}/poirot/svdb_query/scramble_wgs_hg38_novaseqX_v3.0.sorted.vcf.gz,\
+              {{REFERENCE_DATA}}/poirot/svdb_query/gnomad.v4.1.sv.sites.no_cnv.PASS.vcf.gz"
+
+vep:
+  vep_cache: '{{REFERENCE_DATA}}/poirot/VEP/'
+
+vep_trio:
+  vep_cache: '{{REFERENCE_DATA}}/poirot/VEP/'
+
+vep_svdb:
+  vep_cache: '{{REFERENCE_DATA}}/poirot/VEP/'
+
+verifybamid2:
+  svd_mu: '{{REFERENCE_DATA}}/poirot/verifybamid2/1000g.phase3.100k.b38.vcf.gz.dat.mu'
